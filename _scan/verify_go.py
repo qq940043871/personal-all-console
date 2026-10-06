@@ -35,6 +35,9 @@ try:
         except Exception:
             time.sleep(0.25)
     check("serve.py 启动", up)
+    if not up:
+        print("\n服务器未启动，后续 http 用例无法进行")
+        sys.exit(1)
 
     with sync_playwright() as pw:
         b = pw.chromium.launch(headless=True)
@@ -96,6 +99,31 @@ try:
         check("目录挂载可访问（dir:// 条目）", st_dir == 200, f"status={st_dir}")
         check("README 链接可访问", st_rd == 200, f"status={st_rd}")
         check("路径穿越被拒", st_404 == 404, f"status={st_404}")
+        # ---- 抽屉条目：回归用例（曾因内联 onclick 转义错误，255 个按钮全失效）----
+        pg2.locator(".card").nth(0).locator("button.btn").nth(1).click()
+        pg2.wait_for_timeout(500)
+        n_items = pg2.locator("#dBody .item").count()
+        check("抽屉渲染条目", n_items > 0, f"items={n_items}")
+        popd = None
+        try:
+            with pg2.expect_popup(timeout=4000) as pi3:
+                pg2.locator("#dBody .item .mini").nth(0).click()
+            popd = pi3.value
+        except Exception:
+            pass
+        check("抽屉条目可打开", popd is not None,
+              "popup = " + (popd.url if popd else "无"))
+        if popd:
+            popd.wait_for_load_state()
+        pg2.wait_for_timeout(300)
+        pg2.locator("#dClose").click()
+        pg2.wait_for_timeout(300)
+
+        # 命令型条目（Python/CLI 项目）
+        pg2.locator(".card").nth(1).locator("button.btn").nth(1).click()
+        pg2.wait_for_timeout(500)
+        ncmd = pg2.locator('#dBody button[data-act="cmd"]').count()
+        check("命令型条目渲染", ncmd > 0, f"cmd buttons={ncmd}")
         check("http:// 模式无 JS 报错", not errs2, "; ".join(errs2[:3]))
         ctx2.close()
         b.close()

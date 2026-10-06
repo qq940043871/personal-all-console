@@ -7,7 +7,10 @@ SCAN = os.path.join(BASE, "_scan/projects.json")
 TPL = os.path.join(BASE, "_scan/template.html")
 OUT = os.path.join(BASE, "index.html")
 
-RAW = {d["key"]: d for d in json.load(open(SCAN, encoding="utf-8"))}
+_J = json.load(open(SCAN, encoding="utf-8"))
+RAW = {d["key"]: d for d in _J["projects"]}
+DISC = _J.get("discovered", [])
+SNAPSHOT = _J.get("generated", "")
 
 
 def exists(root, rel):
@@ -86,36 +89,95 @@ CUR["invest"] = dict(
 CUR["media"] = dict(
     label="自媒体中台", accent="#f472b6", icon="media",
     title="AI 自媒体内容生产中台",
-    desc="一站式 AI 内容生产：短视频、图文发布、长篇小说、书评分析、个人博客，统一 CLI + Flask 看板驱动。",
-    main="publish_workbench/index.html", mainDoc="README.md",
-    order=["工作台与看板", "内容业务线", "工程与文档"],
-    name={"publish_workbench/index.html": "发布工作台（公众号/抖音/飞书）"},
-    grp=lambda p: "工作台与看板",
+    desc="三平面中台：创作（LangGraph 写作智能体）+ 发布（飞书/公众号/抖音/小说）+ Web 看板；创作资产库按作品建工程。",
+    main="dir://assets", mainDoc="README.md",
+    order=["看板与 CLI", "创作资产库", "平台层代码", "文档与技能", "启动命令"],
+    name={"media-cli.py": "统一 CLI 入口（薄壳）"},
+    grp=lambda p: "看板与 CLI",
     extra=[
-        dict(name="hello_doubao_video 抖音短视频", path="dir://hello_doubao_video",
-             group="内容业务线", desc="短视频生产线（豆包 + FFmpeg）"),
-        dict(name="hello_feishu 教学视频→飞书", path="dir://hello_feishu",
-             group="内容业务线", desc="教学视频转飞书知识库流水线"),
-        dict(name="hello_novel 长篇小说创作", path="dir://hello_novel",
-             group="内容业务线", desc="多部作品的小说生产线"),
-        dict(name="hello_webchat_official 公众号文章", path="dir://hello_webchat_official",
-             group="内容业务线", desc="公众号官方文章技能流水线"),
-        dict(name="hello_webchat_solo 智能写作助手", path="dir://hello_webchat_solo",
-             group="内容业务线", desc="公众号独立写作程序"),
-        dict(name="hello_weixin_book 网文/书籍分析", path="dir://hello_weixin_book",
-             group="内容业务线", desc="网文与书籍 HTML 分析报告"),
-        dict(name="family-life-video 家庭生活视频", path="dir://family-life-video",
-             group="内容业务线", desc="家庭生活视频素材与产出"),
-        dict(name="dashboard/ Flask 数据看板", path="dir://dashboard",
-             group="工作台与看板", desc="python dashboard/app.py 启动"),
-        dict(name="docs/ 全仓文档索引", path="dir://docs",
-             group="工程与文档", desc="docs/INDEX.md 为文档体系总入口"),
-        dict(name="core/ 共享能力层", path="dir://core",
-             group="工程与文档", desc="配置 / LLM / ASR / 视频 / 发布 / 素材 / 任务"),
-        dict(name="media-cli.py 统一 CLI", path="media-cli.py", group="工作台与看板",
-             desc="python media-cli.py status / video / asr / publish", badge="CLI"),
-        dict(name="ARCHITECTURE.md 架构说明", path="ARCHITECTURE.md", group="工程与文档"),
-        dict(name="AGENTS.md 协作规范", path="AGENTS.md", group="工程与文档"),
+        dict(name="workbench/ Web 看板 + 项目工作台", path="dir://workbench",
+             group="看板与 CLI", desc="Flask · 首页创作统计，/workbench 为项目工作台", badge="Flask"),
+        dict(name="skills/ 公众号文章技能线", path="dir://.claude/skills",
+             group="文档与技能", desc="15 个技能包（宿主约定路径 .claude/skills）"),
+        dict(name="assets/ 创作资产库总览", path="dir://assets",
+             group="创作资产库", desc="按作品建工程、按平台做动作；drafts→published 状态流转"),
+        dict(name="assets/novels/ 小说工程", path="dir://assets/novels",
+             group="创作资产库", desc="沧元图 / 时间裂缝 / diff_life / little_man / 人物特稿 等"),
+        dict(name="assets/articles/ 图文 → 公众号", path="dir://assets/articles",
+             group="创作资产库", desc="公众号图文工程"),
+        dict(name="assets/videos/ 短视频 → 抖音", path="dir://assets/videos",
+             group="创作资产库", desc="抖音短视频工程"),
+        dict(name="assets/wikis/ 知识库 → 飞书", path="dir://assets/wikis",
+             group="创作资产库", desc="飞书知识库工程"),
+        dict(name="core/ 对内能力层", path="dir://core",
+             group="平台层代码", desc="配置 / providers 模型注册表 / 内容转化 / 素材 / 任务 / 盘点"),
+        dict(name="creation/ 写平面·创作", path="dir://creation",
+             group="平台层代码", desc="wechat_agent：LangGraph 写作智能体"),
+        dict(name="publishing/ 写平面·出海", path="dir://publishing",
+             group="平台层代码", desc="飞书 / 公众号 / 抖音 / 小说批量发布器"),
+        dict(name="cli/ 命令实现包", path="dir://cli",
+             group="平台层代码", desc="命令实现横跨三平面"),
+        dict(name="system/ 运行时目录", path="dir://system", group="平台层代码",
+             desc="models 模型缓存 / storage 运行库 / tests 平台层测试"),
+        dict(name="ARCHITECTURE.md 架构说明", path="ARCHITECTURE.md", group="文档与技能"),
+        dict(name="AGENTS.md 协作规范", path="AGENTS.md", group="文档与技能"),
+        dict(name="publishing/README.md 发布契约", path="publishing/README.md", group="文档与技能"),
+        dict(name="assets/README.md 资产库说明", path="assets/README.md", group="文档与技能"),
+        dict(name="环境自检 + 探活", path="cmd://python media-cli.py doctor --live",
+             group="启动命令", desc="配置/依赖/数据库自检，并实调 LLM 与发布平台", badge="命令"),
+        dict(name="查看中台状态", path="cmd://python media-cli.py status",
+             group="启动命令", desc="运行 python media-cli.py status", badge="命令"),
+        dict(name="启动交互菜单", path="cmd://start.bat",
+             group="启动命令", desc="菜单：自检 / 看板 / 资产库 / 发布 / 装依赖 / 测试", badge="命令"),
+        dict(name="Web 数据看板（127.0.0.1:5000）", path="cmd://start.bat  # 菜单选 [6] 看板",
+             group="启动命令", desc="Flask 看板，仅绑本地回环", badge="命令"),
+    ],
+)
+
+CUR["readbook"] = dict(
+    label="读书拆书", accent="#f0abfc", icon="book",
+    title="personal-read-book 读书拆书工程",
+    desc="网文与书籍深度分析产出：我吃西红柿全系列（盘龙/星辰变/沧元图…）+ 孙子兵法蒸馏 + 拆书工程。",
+    main="analyses/我吃西红柿全部小说总览.html", mainDoc="README.md",
+    order=["总览与清单", "作品分析", "拆书工程"],
+    name={
+        "analyses/我吃西红柿全部小说总览.html": "我吃西红柿全部小说总览",
+        "INDEX.md": "分析稿清单（按作品）",
+    },
+    grp=lambda p: ("总览与清单" if "总览" in p or p.upper().startswith("INDEX")
+                   else "作品分析" if p.startswith("analyses/") else "拆书工程"),
+    extra=[
+        dict(name="INDEX.md 分析稿清单", path="INDEX.md", group="总览与清单"),
+        dict(name="articles|novels|videos 资产", path="dir://assets", group="拆书工程",
+             desc="分析稿引用的素材与插图"),
+        dict(name="books/ 拆书工程（PDF + .cangjie）", path="dir://books", group="拆书工程",
+             desc="《人工智能（第2版）》等原书与拆书产物"),
+    ],
+)
+
+CUR["aieng"] = dict(
+    label="AI 工程", accent="#818cf8", icon="ai",
+    title="personal-ai-engineering 个人 AI 工程工作区",
+    desc="聚合五个子项目：多智能体运行时框架、AI 技术栈学习主工程、本地大模型实验、AI 课程站与面试题库、AI 工作台门户。",
+    main="ai-study-note/index.html", mainDoc="README.md",
+    order=["站点与门户", "子项目", "文档"],
+    name={
+        "ai-study-note/index.html": "AI 课程站 + 大模型面试题库",
+        "ai-study-note/md-viewer.html": "题库 Markdown 阅读器",
+        "ai-workbench/index.html": "AI 工作台门户",
+    },
+    grp=lambda p: ("文档" if p.lower().endswith(".md") else "站点与门户"),
+    extra=[
+        dict(name="agent-harness/ 多智能体运行时框架", path="dir://agent-harness",
+             group="子项目", desc="课程跟学实践：Harness 架构与实现", badge="框架"),
+        dict(name="ai_study_py/ AI 学习主工程", path="dir://ai_study_py",
+             group="子项目", desc="框架学习 / 项目 / 工具"),
+        dict(name="ai-study-note/ AI 课程站", path="dir://ai-study-note",
+             group="子项目", desc="courses / documents / exam 静态站点"),
+        dict(name="ai-workbench/ AI 工作台门户", path="dir://ai-workbench",
+             group="子项目", desc="单页门户 index.html"),
+        dict(name="ollama-lab/ 本地大模型实验", path="dir://ollama-lab",
+             group="子项目", desc="Ollama 对话与 RAG 实验"),
     ],
 )
 
@@ -380,11 +442,12 @@ DOMAIN_KEY = {"生活": "life", "工作": "work", "life": "life", "work": "work"
 def build():
     out = []
     warn = []
-    for key in ["invest", "media", "money", "tech", "family", "b2b", "axure"]:
+    for key in ["invest", "media", "money", "tech", "family", "readbook", "aieng", "b2b", "axure"]:
         raw = RAW[key]
         cur = CUR[key]
         root = raw["root"].replace("\\", "/")
         entries = []
+        stale = []          # 策展过但磁盘上已不存在的入口（项目重构后会大量出现）
 
         # 1) 扫描出来的 html 入口
         for e in raw.get("entries", []):
@@ -399,6 +462,7 @@ def build():
                 continue
             if not exists(root, p):
                 warn.append(key + " 缺失: " + p)
+                stale.append(p)
                 continue
             entries.append(dict(
                 name=cur["name"].get(p) or auto_name(p),
@@ -406,14 +470,18 @@ def build():
                 group=cur["grp"](p),
             ))
 
-        # 2) 手工附加（目录型 / 文档型 / README 提及的关键页）
+        # 2) 手工附加（目录型 / 文档型 / 命令型 / README 提及的关键页）
         for it in cur.get("extra", []):
             if not it:
                 continue
             p = it["path"]
+            if p.startswith("cmd://"):
+                entries.append(dict(it))
+                continue
             real = p[6:] if p.startswith("dir://") else p
             if not os.path.exists(os.path.join(root, real) if not os.path.isabs(real) else real):
                 warn.append(key + " extra 缺失: " + p)
+                stale.append(it.get("name") or p)
                 continue
             d = dict(it)
             d.setdefault("group", cur["order"][0])
@@ -426,11 +494,13 @@ def build():
             return (order.get(g, 99), g, e["name"])
         entries.sort(key=skey)
 
-        # 4) 主入口校验
+        # 4) 主入口校验（dir:// 取目录本身，cmd:// 不可作主入口）
         main = cur["main"]
-        if not exists(root, main):
-            warn.append(key + " 主入口不存在: " + main)
-            main = entries[0]["path"] if entries else ""
+        mreal = main[6:] if main.startswith(("dir://", "cmd://")) else main
+        if main.startswith("cmd://") or not mreal or not exists(root, mreal):
+            warn.append(key + " 主入口不可用: " + main)
+            cand = [e for e in entries if not str(e.get("path", "")).startswith("cmd://")]
+            main = cand[0]["path"] if cand else ""
 
         git = raw.get("git") or {}
         out.append(dict(
@@ -444,14 +514,14 @@ def build():
                      commits=git.get("commits"), lastCommit=git.get("lastCommit", "")),
             groups=[dict(title=t) for t in cur["order"]],
             entries=entries,
+            stale=stale,
         ))
 
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-    meta = dict(generated=now)
-    payload = out
-    # 注入 generated 到每个首项用于显示
-    for d in payload:
+    for d in out:
         d["generated"] = now
+
+    payload = {"generated": now, "projects": out, "discovered": DISC}
 
     tpl = open(TPL, encoding="utf-8").read()
     js = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
@@ -461,9 +531,16 @@ def build():
     open(OUT, "w", encoding="utf-8").write(html)
 
     print("生成完成:", OUT, "%.1f KB" % (os.path.getsize(OUT) / 1024))
-    for d in payload:
-        print("  %-7s %-8s 入口 %-4d 页面 %-5d 端口 %s" %
-              (d["key"], d["label"], len(d["entries"]), d["htmlTotal"], d["ports"] or "-"))
+    for d in out:
+        line = "  %-9s %-9s 入口 %-4d 页面 %-5d 端口 %s" % (
+            d["key"], d["label"], len(d["entries"]), d["htmlTotal"], d["ports"] or "-")
+        if d.get("stale"):
+            line += "  ⚠ 失效 %d" % len(d["stale"])
+        print(line)
+    if DISC:
+        print("\n[未登记仓库] %d 个：" % len(DISC))
+        for d in DISC:
+            print("   - %-28s HTML %-5d %s" % (d["name"], d["html"], "git" if d["git"] else "   "))
     if warn:
         print("\n[警告] 共 %d 条：" % len(warn))
         for w in warn[:40]:

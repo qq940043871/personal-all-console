@@ -72,6 +72,16 @@ h1 em{font-style:normal;background:linear-gradient(90deg,#38bdf8,#a78bfa 45%,#f4
   border-color:rgba(56,189,248,.5);color:#fff;font-weight:600}
 .chip .n{opacity:.6;font-size:11px;margin-left:4px}
 
+/* ---------- 数据新鲜度 ---------- */
+.freshwarn{display:flex;flex-direction:column;gap:9px;margin:0 0 14px;padding:12px 16px;border-radius:12px;
+  border:1px solid rgba(251,191,36,.45);background:rgba(251,191,36,.1);color:#ffdf9e;font-size:12.5px}
+.freshline{display:flex;align-items:flex-start;gap:10px}
+.freshline svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;flex:none;margin-top:1px;
+  stroke-linecap:round;stroke-linejoin:round}
+.freshwarn b{color:#fff}
+.freshwarn code{font-family:ui-monospace,Consolas,monospace;background:rgba(255,255,255,.1);
+  padding:1px 6px;border-radius:5px;color:#fff}
+
 /* ---------- 端口条 ---------- */
 .ports{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 22px}
 .pport{display:flex;align-items:center;gap:7px;padding:7px 12px;border-radius:10px;font-size:12px;
@@ -190,6 +200,13 @@ mark{background:rgba(56,189,248,.3);color:#fff;border-radius:3px;padding:0 2px}
   .wrap{padding:0 16px}.grid{grid-template-columns:1fr}h1{font-size:23px}
   .stats{grid-template-columns:repeat(2,1fr)}.clock{text-align:left}
 }
+/* ---------- mode hint bar: static-preview fallback notice ---------- */
+.modebar{display:flex;align-items:flex-start;gap:11px;margin:0 0 14px;padding:11px 16px;border-radius:12px;
+  border:1px solid rgba(56,189,248,.42);background:rgba(56,189,248,.09);color:#bfe6ff;font-size:12.5px;line-height:1.75}
+.modebar svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;flex:none;margin-top:3px;
+  stroke-linecap:round;stroke-linejoin:round}
+.modebar b{color:#e8f6ff}
+.modebar code{background:rgba(56,189,248,.16);padding:1px 5px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -217,6 +234,8 @@ mark{background:rgba(56,189,248,.3);color:#fff;border-radius:3px;padding:0 2px}
 </header>
 
 <div class="wrap">
+  <div id="fresh"></div>
+  <div id="modebar"></div>
   <div class="ports" id="ports"></div>
   <div class="toolbar">
     <div class="search">
@@ -260,7 +279,32 @@ mark{background:rgba(56,189,248,.3);color:#fff;border-radius:3px;padding:0 2px}
 <div class="toast" id="toast"></div>
 
 <script>
-const DATA = /*__DATA__*/null;
+const _RAW = /*__DATA__*/null;
+const DATA = _RAW.projects||[];
+const DISC = _RAW.discovered||[];
+
+/* ---------- runtime mode probe ----------
+   Only the real serve.py exposes /p/<key>/ repository mounts. Opened through a
+   plain static server or the built-in preview there are no mounts, so emitting
+   p/<key>/ links makes "open main entry" 404. Probe the server identity first:
+   on failure, always degrade to file:// + copy-path. */
+let SERVE_OK=false;
+const SERVE_READY = (location.protocol==='file:')
+  ? Promise.resolve(false)
+  // 探测同源 index.html 的响应头，而不是请求 /__console__：后者在普通静态服务器
+  // 上必然 404，会在 console 里留一条无意义的错误噪音（虽然不影响功能）
+  : fetch('./index.html',{method:'HEAD',cache:'no-store'})
+      .then(r=>{ SERVE_OK = r.ok && r.headers.get('X-Console-Serve')==='1'; return SERVE_OK; })
+      .catch(()=>{ SERVE_OK=false; return false; });
+SERVE_READY.then(ok=>{
+  if(ok||location.protocol==='file:') return;
+  const el=document.getElementById('modebar'); if(!el) return;
+  el.className='modebar';
+  el.innerHTML='<svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 9v5M12 17h.01"/></svg>'+
+    '<div>当前是<b>静态预览模式</b>：没有检测到工作台服务，浏览器又禁止网页打开本地文件，'+
+    '所以点「打开主入口」只会把本地路径复制给你。<br>要能直接跳转，请运行 <code>start.bat</code>'+
+    '（或 <code>python serve.py</code>）后访问 <code>http://127.0.0.1:3000/</code>。</div>';
+});
 
 /* ---------- 图标 ---------- */
 const ICO = {
@@ -271,6 +315,8 @@ const ICO = {
   family:'<path d="M3.5 11l8.5-7 8.5 7"/><path d="M6 10v10h12V10"/><path d="M10.5 20v-5h3v5"/>',
   b2b:'<path d="M3 8l9-5 9 5v8l-9 5-9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/>',
   axure:'<rect x="3" y="3" width="12" height="12" rx="2"/><rect x="9" y="9" width="12" height="12" rx="2"/>',
+  book:'<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v16H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v4H6.5A2.5 2.5 0 0 1 4 20.5z"/><path d="M8.5 6.5h7M8.5 10h4.5"/>',
+  ai:'<circle cx="12" cy="12" r="2.6"/><circle cx="5" cy="5.5" r="2"/><circle cx="19" cy="5.5" r="2"/><circle cx="5" cy="18.5" r="2"/><circle cx="19" cy="18.5" r="2"/><path d="M6.7 7l3.6 3.3M17.3 7l-3.6 3.3M6.7 17l3.6-3.3M17.3 17l-3.6-3.3"/>',
   file:'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/>',
   dir:'<path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>',
   run:'<path d="M4 17l5-5-5-5"/><path d="M12 19h8"/>',
@@ -293,10 +339,12 @@ function fileUrl(root,rel){
 }
 /* http 模式下浏览器禁止打开 file:// 链接，改走 serve.py 的 /p/<key>/ 挂载 */
 function pageUrl(root,rel){
-  if(location.protocol!=='file:'){
+  if(SERVE_OK){
     const n=s=>String(s).replace(/\\/g,'/').replace(/\/+$/,'').toLowerCase();
     const d=ALL.find(x=>n(x.root)===n(root));
-    if(d) return 'p/'+d.key+'/'+(rel||'');
+    // absolute path: serve.py mounts at site root; a relative one breaks when
+    // the console page itself lives under a sub-path
+    if(d) return '/p/'+d.key+'/'+String(rel||'').replace(/^\/+/,'');
   }
   return fileUrl(root,rel);
 }
@@ -317,21 +365,24 @@ async function cp(text,msg){
   try{ document.execCommand('copy'); toast(msg||'已复制路径'); }catch(e){ toast('复制失败，请手动复制'); }
   document.body.removeChild(ta);
 }
-function openIt(p,rel){
-  const relpath = rel||'';
-  let url;
-  if(/^https?:\/\//i.test(p)) url=p;
-  else if(p.startsWith('dir://')) url=fileUrl(p.slice(6),'');
-  else url=pageUrl(p,relpath);
+async function openIt(p,rel){
+  const relpath = String(rel||'').replace(/^dir:\/\//,'');   // 目录型条目同样落到 /p/<key>/ 或本地目录
+  await SERVE_READY;                 // 等探测结束：渲染可能早于探测，否则会误判成服务挂载
+  const url = /^https?:\/\//i.test(p) ? p : pageUrl(p,relpath);
+  let opened=false;
   if(/^file:/i.test(url) && location.protocol!=='file:'){
     // http(s) 页面里浏览器安全策略禁止打开 file:// 链接：转为本地路径复制兜底
     let nat=url.slice(7); if(nat.startsWith('/')) nat=nat.slice(1);
     try{ nat=decodeURIComponent(nat); }catch(e){}
-    cp(nat.replace(/\//g,'\\'),'浏览器禁止 http 页面打开本地文件，路径已复制；建议双击 index.html（file://）打开本工作台');
-  } else window.open(url,'_blank');
+    cp(nat.replace(/\//g,'\\'),'浏览器禁止网页打开本地文件：路径已复制，粘到资源管理器即可；或用 start.bat 以服务模式打开本工作台');
+  } else {
+    opened=!!window.open(url,'_blank');
+    if(!opened) cp(url,'新窗口被浏览器拦截，链接已复制');
+  }
   const it = REC.find(x=>x.k===p+relpath);
   if(it){ it.t=Date.now(); } else { REC.unshift({k:p+relpath,n:arguments[2]||'',t:Date.now()}); REC=REC.slice(0,40); }
   jset(LS_REC,REC);
+  return opened;
 }
 
 /* ---------- 时钟 ---------- */
@@ -366,6 +417,27 @@ document.getElementById('stats').innerHTML=[
   ['c4',totalDirty,'未提交改动'],
   ['c3',totalEntry,'可直开入口']
 ].map(x=>'<div class="stat '+x[0]+'"><div class="v">'+x[1]+'</div><div class="k">'+x[2]+'</div></div>').join('');
+
+/* ---------- 数据新鲜度 / 策展失效 / 未登记仓库：三类维护信号集中告警 ---------- */
+(function(){
+  const el=document.getElementById('fresh'); if(!el) return;
+  const msgs=[];
+  const raw=(DATA[0]&&DATA[0].generated)||'';
+  const t=Date.parse(String(raw).replace(/-/g,'/'));
+  if(t){
+    const days=Math.floor((Date.now()-t)/864e5);
+    if(days>=7) msgs.push('入口快照已 <b>'+days+' 天</b>未刷新（'+esc(raw)+'）。执行 <code>python _scan/refresh.py</code> 重新扫描入口与 git 状态。');
+  }
+  const staleTotal=DATA.reduce((s,d)=>s+((d.stale&&d.stale.length)||0),0);
+  if(staleTotal) msgs.push('<b>'+staleTotal+'</b> 个策展入口在磁盘上已不存在（项目重构后常见），见下方卡片「入口失效」徽章，需修 <code>_scan/build.py</code> 的策展表。');
+  if(DISC.length) msgs.push('发现 <b>'+DISC.length+'</b> 个未登记仓库：'+
+    DISC.map(d=>esc(d.name)+'（HTML '+d.html+'）').join('、')+'。确认要纳入可加入策展表。');
+  if(!msgs.length) return;
+  el.className='freshwarn';
+  el.innerHTML=msgs.map(m=>'<div class="freshline">'+
+    '<svg viewBox="0 0 24 24"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/>'+
+    '<path d="M12 9v4M12 17h.01"/></svg><div>'+m+'</div></div>').join('');
+})();
 
 /* ---------- 端口条 ---------- */
 (function(){
@@ -416,6 +488,7 @@ function cardHTML(d){
       (g.commits?'<span class="met">提交 <b>'+g.commits+'</b></span>':'')+
       '<span class="met '+(dirty?'git-dirty':'git-clean')+'">未提交 <b>'+(dirty==null?'-':dirty)+'</b></span>'+
       '<span class="met">更新 <b>'+esc(d.mtime||'-')+'</b></span>'+
+      (d.stale&&d.stale.length?'<span class="met git-dirty" title="'+esc(d.stale.join(' | '))+'">入口失效 <b>'+d.stale.length+'</b></span>':'')+
     '</div>'+
     '<div class="cact">'+
       '<button class="btn primary" onclick="go(\''+d.key+'\')">'+svg('run')+'打开主入口</button>'+
@@ -448,10 +521,10 @@ function render(){
   document.getElementById('cFav').textContent=FAV.length;
 }
 
-function go(key){
+async function go(key){
   const d=ALL.find(x=>x.key===key); if(!d) return;
-  openIt(d.root, d.main);
-  toast('已打开：'+d.label);
+  const ok = await openIt(d.root, d.main);
+  if(ok) toast('已打开：'+d.label);
 }
 function toggleFav(e,key){
   e.stopPropagation();
@@ -481,7 +554,7 @@ function openDrawer(key){
     '<span class="met '+(g.dirty?'git-dirty':'git-clean')+'">未提交 <b>'+(g.dirty==null?'-':g.dirty)+'</b></span>'+
     (g.lastCommit?'<span class="met">最近提交 <b>'+esc(g.lastCommit)+'</b></span>':'')+
     (d.ports&&d.ports.length?'<span class="met">端口 <b>:'+d.ports.join(', :')+'</b></span>':'')+
-    (d.mainDoc?'<a class="btn icon" target="_blank" href="'+pageUrl(d.root,d.mainDoc)+'" title="README">'+svg('file')+'</a>':'');
+    (d.mainDoc?'<a class="btn icon" data-doc="'+esc(d.mainDoc)+'" data-doc-root="'+esc(d.root)+'" title="README">'+svg('file')+'</a>':'');
   document.getElementById('dq').value='';
   renderBody();
   document.getElementById('mask').classList.add('on');
@@ -491,6 +564,7 @@ function closeDrawer(){
   document.getElementById('mask').classList.remove('on');
   document.getElementById('drawer').classList.remove('on');
 }
+let CUR_ITEMS=[];
 function renderBody(){
   const d=ALL.find(x=>x.key===curKey); if(!d) return;
   const q=document.getElementById('dq').value.trim().toLowerCase();
@@ -498,6 +572,7 @@ function renderBody(){
   (d.groups||[]).forEach(g=>{ gs[g.title]=[] });
   d.entries.forEach(e=>{ const t=e.group||'其他页面'; (gs[t]=gs[t]||[]).push(e) });
   let body='', n=0;
+  CUR_ITEMS=[];
   Object.keys(gs).forEach(t=>{
     const items=gs[t].filter(e=>!q||((e.name+' '+(e.path||'')+' '+(e.desc||'')).toLowerCase().indexOf(q)>=0));
     if(!items.length) return;
@@ -505,21 +580,26 @@ function renderBody(){
     body+='<div class="grpttl">'+esc(t)+' · '+items.length+'</div>';
     items.forEach(e=>{
       const target=String(e.path||'');
+      const isCmd=target.startsWith('cmd://');           // 命令型：点击复制命令而非打开页面
       const isDir=target.startsWith('dir://');
+      const cmd=isCmd?target.slice(6):'';
       const real=isDir?target.slice(6):target;
-      const full=d.root.replace(/\\/g,'/')+'/'+real+(isDir?'/':'');
-      const u=e.href||pageUrl(d.root,real);
+      const full=isCmd?cmd:(d.root.replace(/\\/g,'/')+'/'+real+(isDir?'/':''));
+      // do NOT freeze the URL here: the probe result may land after render,
+      // so resolve it on click instead (openIt re-computes via pageUrl)
+      const i=CUR_ITEMS.push({root:d.root,rel:real,href:e.href||'',n:e.name,f:full,cmd:cmd})-1;
       body+='<div class="item">'+
-        '<div class="iico">'+svg(isDir?'dir':(e.icon||'file'))+'</div>'+
+        '<div class="iico">'+svg(isCmd?'run':(isDir?'dir':(e.icon||'file')))+'</div>'+
         '<div class="imain">'+
           '<div class="iname">'+hl(e.name,q)+(e.badge?' <span class="met" style="margin-left:6px">'+esc(e.badge)+'</span>':'')+'</div>'+
           '<div class="ipath">'+hl(full,q)+'</div>'+
           (e.desc?'<div class="isub">'+hl(e.desc,q)+'</div>':'')+
         '</div>'+
         '<div class="act">'+
-          '<button class="mini" onclick=\'visit('+JSON.stringify(JSON.stringify(u))+
-            ','+JSON.stringify(JSON.stringify(e.name))+','+JSON.stringify(JSON.stringify(full))+'\') title="打开">'+svg('ext')+'</button>'+
-          '<button class="mini" onclick=\'cp('+JSON.stringify(JSON.stringify(full))+')\' title="复制路径">'+svg('copy')+'</button>'+
+          (isCmd
+            ? '<button class="mini" data-i="'+i+'" data-act="cmd" title="复制命令">'+svg('copy')+'</button>'
+            : '<button class="mini" data-i="'+i+'" data-act="open" title="打开">'+svg('ext')+'</button>'+
+              '<button class="mini" data-i="'+i+'" data-act="copy" title="复制路径">'+svg('copy')+'</button>')+
         '</div>'+
       '</div>';
     });
@@ -527,12 +607,29 @@ function renderBody(){
   if(!n) body='<div class="empty"><b>项目内没有匹配项</b>清空过滤条件看看</div>';
   document.getElementById('dBody').innerHTML=body;
 }
-function visit(u,name,pathish){
+function visit(u,name){
   window.open(u,'_blank');
   REC.unshift({k:u,n:name,t:Date.now()}); REC=REC.slice(0,40); jset(LS_REC,REC);
 }
 window.visit=visit;
+/* 事件委托：内联 onclick 需三层引号转义，曾导致抽屉 255 个按钮全失效，改为 data 索引 */
+document.getElementById('dBody').addEventListener('click',ev=>{
+  const b=ev.target.closest('button[data-i]'); if(!b) return;
+  const it=CUR_ITEMS[+b.dataset.i]; if(!it) return;
+  const act=b.dataset.act;
+  if(act==='open'){
+    if(it.href) window.open(it.href,'_blank');   // 外部 http 链接直接开
+    else openIt(it.root,it.rel);
+  }
+  else if(act==='cmd') cp(it.cmd,'命令已复制，粘贴到终端执行');
+  else cp(it.f);
+});
 
+document.getElementById('dMeta').addEventListener('click',ev=>{
+  const a=ev.target.closest('[data-doc]'); if(!a) return;
+  ev.preventDefault();
+  openIt(a.getAttribute('data-doc-root'), a.getAttribute('data-doc'));
+});
 document.getElementById('dClose').onclick=closeDrawer;
 document.getElementById('mask').onclick=closeDrawer;
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDrawer() });

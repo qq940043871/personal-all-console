@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
-"""总工作台本地服务：控制台本身 + 7 个项目仓库统一挂载到 /p/<key>/。
+"""总工作台本地服务：控制台本身 + 各项目仓库统一挂载到 /p/<key>/。
 
 浏览器禁止 http 页面打开 file:// 链接，因此 start.bat 用本服务替代
 npx http-server：「打开主入口」在 http 模式下直接开 /p/<key>/ 页面，
 双击 index.html（file:// 直开）仍走本地文件路径，两种模式都能用。
 
+另暴露 GET /__console__ 作为「服务身份探测」端点：前端据此判断当前页面
+是被真正的 serve.py 承载，还是被普通静态服务器 / 内置预览承载。后者没有
+/p/ 挂载，若照旧生成 p/<key>/ 链接会直接 404 —— 必须降级为复制本地路径。
+
 用法：python serve.py [--port 3000]
 """
 import json
-import re
 import sys
 from pathlib import Path
 from posixpath import normpath
@@ -20,15 +23,36 @@ PORT = 3000
 if "--port" in sys.argv:
     PORT = int(sys.argv[sys.argv.index("--port") + 1])
 
-# 挂载表与卡片 UI 同源：直接取 index.html 里注入的 DATA（key → 项目根目录）
-_m = re.search(r"const DATA = (\[.*?\]);\n",
-               (ROOT / "index.html").read_text(encoding="utf-8"), re.S)
-MOUNTS = {d["key"]: Path(d["root"]) for d in json.loads(_m.group(1))}
+# 挂载表取 _scan/projects.json（结构化产物），不再从 index.html 正则抠 JS——
+# 后者会因模板格式变动而静默失效。
+_SJ = ROOT / "_scan" / "projects.json"
+if not _SJ.exists():
+    sys.exit("缺少 _scan/projects.json，请先运行：python _scan/refresh.py")
+MOUNTS = {d["key"]: Path(d["root"])
+          for d in json.loads(_SJ.read_text(encoding="utf-8"))["projects"]}
+
+# 探测端点响应体：console 字段即前端识别服务身份的凭据
+PROBE = json.dumps({
+    "console": "personal-all-console",
+    "port": PORT,
+    "root": str(ROOT),
+    "mounts": {k: str(v) for k, v in MOUNTS.items()},
+}, ensure_ascii=False).encode("utf-8")
 
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *a, **kw):
         super().__init__(*a, directory=str(ROOT), **kw)
+
+    def do_GET(self):
+        if self.path.split("?", 1)[0].rstrip("/") == "/__console__":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(PROBE)))
+            self.end_headers()
+            self.wfile.write(PROBE)
+            return
+        super().do_GET()
 
     def translate_path(self, path):
         p = normpath(unquote(path.split("?", 1)[0].split("#", 1)[0]))
@@ -51,6 +75,7 @@ class Handler(SimpleHTTPRequestHandler):
         return t
 
     def end_headers(self):
+        self.send_header("X-Console-Serve", "1")
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
 

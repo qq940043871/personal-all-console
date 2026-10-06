@@ -1,2591 +1,2931 @@
-[
- {
-  "key": "invest",
-  "label": "面试求职",
-  "root": "D:/ai_person/personal-investment-notes",
-  "domain": "生活",
-  "exists": true,
-  "entries": [
-   {
-    "path": "index.html",
-    "file": "index.html",
-    "dir": "",
-    "mtime": "2026-10-01",
-    "size": 126995,
-    "is_index": true
+{
+ "generated": "2026-10-03 11:57",
+ "projects": [
+  {
+   "key": "invest",
+   "label": "面试求职",
+   "root": "D:/ai_person/personal-investment-notes",
+   "domain": "生活",
+   "exists": true,
+   "entries": [
+    {
+     "path": "index.html",
+     "file": "index.html",
+     "dir": "",
+     "mtime": "2026-10-01",
+     "size": 126995,
+     "is_index": true
+    },
+    {
+     "path": "banks/Java深度八股文.html",
+     "file": "Java深度八股文.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 57054,
+     "is_index": false
+    },
+    {
+     "path": "banks/Java面试题深度整理.html",
+     "file": "Java面试题深度整理.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 83688,
+     "is_index": false
+    },
+    {
+     "path": "banks/KafkaZookeeper深度八股文.html",
+     "file": "KafkaZookeeper深度八股文.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 83473,
+     "is_index": false
+    },
+    {
+     "path": "banks/Linux面试题深度整理.html",
+     "file": "Linux面试题深度整理.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 72681,
+     "is_index": false
+    },
+    {
+     "path": "banks/MySQL八股文追问链.html",
+     "file": "MySQL八股文追问链.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 50064,
+     "is_index": false
+    },
+    {
+     "path": "banks/MySQL面试题深度整理.html",
+     "file": "MySQL面试题深度整理.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 36314,
+     "is_index": false
+    },
+    {
+     "path": "banks/Nginx深度八股文.html",
+     "file": "Nginx深度八股文.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 75043,
+     "is_index": false
+    },
+    {
+     "path": "banks/Nginx面试题深度整理.html",
+     "file": "Nginx面试题深度整理.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 124288,
+     "is_index": false
+    },
+    {
+     "path": "banks/Redis八股文追问链.html",
+     "file": "Redis八股文追问链.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 47672,
+     "is_index": false
+    },
+    {
+     "path": "banks/Redis面试题深度整理.html",
+     "file": "Redis面试题深度整理.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 71014,
+     "is_index": false
+    },
+    {
+     "path": "banks/Tomcat面试题深度整理.html",
+     "file": "Tomcat面试题深度整理.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 89633,
+     "is_index": false
+    },
+    {
+     "path": "banks/md-viewer.html",
+     "file": "md-viewer.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 10180,
+     "is_index": false
+    },
+    {
+     "path": "banks/网络连接类型八股文.html",
+     "file": "网络连接类型八股文.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 49896,
+     "is_index": false
+    },
+    {
+     "path": "banks/网络连接类型面试题深度整理.html",
+     "file": "网络连接类型面试题深度整理.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 87186,
+     "is_index": false
+    },
+    {
+     "path": "banks/面试背诵集合.html",
+     "file": "面试背诵集合.html",
+     "dir": "banks",
+     "mtime": "2026-10-01",
+     "size": 840844,
+     "is_index": false
+    },
+    {
+     "path": "prep/index.html",
+     "file": "index.html",
+     "dir": "prep",
+     "mtime": "2026-10-01",
+     "size": 22323,
+     "is_index": true
+    },
+    {
+     "path": "resume/index.html",
+     "file": "index.html",
+     "dir": "resume",
+     "mtime": "2026-10-01",
+     "size": 42853,
+     "is_index": true
+    },
+    {
+     "path": "resume/md-viewer.html",
+     "file": "md-viewer.html",
+     "dir": "resume",
+     "mtime": "2026-10-01",
+     "size": 10180,
+     "is_index": false
+    },
+    {
+     "path": "slides/index.html",
+     "file": "index.html",
+     "dir": "slides",
+     "mtime": "2026-10-01",
+     "size": 20882,
+     "is_index": true
+    },
+    {
+     "path": "prep/面试框架/index.html",
+     "file": "index.html",
+     "dir": "prep/面试框架",
+     "mtime": "2026-10-01",
+     "size": 29341,
+     "is_index": true
+    }
+   ],
+   "html_total": 62,
+   "subs": [
+    {
+     "name": "banks",
+     "kinds": [],
+     "count": 29
+    },
+    {
+     "name": "cases",
+     "kinds": [],
+     "count": 2
+    },
+    {
+     "name": "prep",
+     "kinds": [
+      "html"
+     ],
+     "count": 11
+    },
+    {
+     "name": "resume",
+     "kinds": [
+      "html",
+      "doc"
+     ],
+     "count": 4
+    },
+    {
+     "name": "slides",
+     "kinds": [
+      "html"
+     ],
+     "count": 171
+    },
+    {
+     "name": "tools",
+     "kinds": [
+      "doc",
+      "py"
+     ],
+     "count": 7
+    }
+   ],
+   "git": {
+    "dirty": 0,
+    "branch": "main",
+    "last_commit": "2026-10-03 07:06",
+    "commits": 6,
+    "commit_msg": "本地服务端口改为 3001"
    },
-   {
-    "path": "banks/Java深度八股文.html",
-    "file": "Java深度八股文.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 57054,
-    "is_index": false
-   },
-   {
-    "path": "banks/Java面试题深度整理.html",
-    "file": "Java面试题深度整理.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 83688,
-    "is_index": false
-   },
-   {
-    "path": "banks/KafkaZookeeper深度八股文.html",
-    "file": "KafkaZookeeper深度八股文.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 83473,
-    "is_index": false
-   },
-   {
-    "path": "banks/Linux面试题深度整理.html",
-    "file": "Linux面试题深度整理.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 72681,
-    "is_index": false
-   },
-   {
-    "path": "banks/MySQL八股文追问链.html",
-    "file": "MySQL八股文追问链.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 50064,
-    "is_index": false
-   },
-   {
-    "path": "banks/MySQL面试题深度整理.html",
-    "file": "MySQL面试题深度整理.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 36314,
-    "is_index": false
-   },
-   {
-    "path": "banks/Nginx深度八股文.html",
-    "file": "Nginx深度八股文.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 75043,
-    "is_index": false
-   },
-   {
-    "path": "banks/Nginx面试题深度整理.html",
-    "file": "Nginx面试题深度整理.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 124288,
-    "is_index": false
-   },
-   {
-    "path": "banks/Redis八股文追问链.html",
-    "file": "Redis八股文追问链.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 47672,
-    "is_index": false
-   },
-   {
-    "path": "banks/Redis面试题深度整理.html",
-    "file": "Redis面试题深度整理.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 71014,
-    "is_index": false
-   },
-   {
-    "path": "banks/Tomcat面试题深度整理.html",
-    "file": "Tomcat面试题深度整理.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 89633,
-    "is_index": false
-   },
-   {
-    "path": "banks/md-viewer.html",
-    "file": "md-viewer.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 10180,
-    "is_index": false
-   },
-   {
-    "path": "banks/网络连接类型八股文.html",
-    "file": "网络连接类型八股文.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 49896,
-    "is_index": false
-   },
-   {
-    "path": "banks/网络连接类型面试题深度整理.html",
-    "file": "网络连接类型面试题深度整理.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 87186,
-    "is_index": false
-   },
-   {
-    "path": "banks/面试背诵集合.html",
-    "file": "面试背诵集合.html",
-    "dir": "banks",
-    "mtime": "2026-10-01",
-    "size": 840844,
-    "is_index": false
-   },
-   {
-    "path": "prep/index.html",
-    "file": "index.html",
-    "dir": "prep",
-    "mtime": "2026-10-01",
-    "size": 22323,
-    "is_index": true
-   },
-   {
-    "path": "resume/index.html",
-    "file": "index.html",
-    "dir": "resume",
-    "mtime": "2026-10-01",
-    "size": 42853,
-    "is_index": true
-   },
-   {
-    "path": "resume/md-viewer.html",
-    "file": "md-viewer.html",
-    "dir": "resume",
-    "mtime": "2026-10-01",
-    "size": 10180,
-    "is_index": false
-   },
-   {
-    "path": "slides/index.html",
-    "file": "index.html",
-    "dir": "slides",
-    "mtime": "2026-10-01",
-    "size": 20882,
-    "is_index": true
-   },
-   {
-    "path": "prep/面试框架/index.html",
-    "file": "index.html",
-    "dir": "prep/面试框架",
-    "mtime": "2026-10-01",
-    "size": 29341,
-    "is_index": true
-   }
-  ],
-  "html_total": 62,
-  "subs": [
-   {
-    "name": "banks",
-    "kinds": [],
-    "count": 29
-   },
-   {
-    "name": "cases",
-    "kinds": [],
-    "count": 2
-   },
-   {
-    "name": "prep",
-    "kinds": [
-     "html"
-    ],
-    "count": 11
-   },
-   {
-    "name": "resume",
-    "kinds": [
-     "html",
-     "doc"
-    ],
-    "count": 4
-   },
-   {
-    "name": "slides",
-    "kinds": [
-     "html"
-    ],
-    "count": 171
-   },
-   {
-    "name": "tools",
-    "kinds": [
-     "doc",
-     "py"
-    ],
-    "count": 7
-   }
-  ],
-  "git": {
-   "dirty": 0,
-   "branch": "main",
-   "last_commit": "2026-10-01 23:14",
-   "commits": 5,
-   "commit_msg": "首页重构为面试工作台 App;目录梳理:构建脚本集中 tools/、face-exp→面试真题、prep 散文件归位,修"
+   "bats": [
+    {
+     "file": "start.bat",
+     "ports": [
+      "3001"
+     ]
+    }
+   ],
+   "mtime": "2026-10-01 23:09",
+   "desc": "B2B 技术经理求职材料库：八股题库、备战手册、实战案例、简历站点，入口为本地工作台。"
   },
-  "bats": [
-   {
-    "file": "start.bat",
-    "ports": [
-     "3003"
-    ]
-   }
-  ],
-  "mtime": "2026-10-01 23:09",
-  "desc": "B2B 技术经理求职材料库：八股题库、备战手册、实战案例、简历站点，入口为本地工作台。"
- },
- {
-  "key": "media",
-  "label": "自媒体中台",
-  "root": "D:/ai_person/personal-media-content",
-  "domain": "生活",
-  "exists": true,
-  "entries": [
-   {
-    "path": "publish_workbench/index.html",
-    "file": "index.html",
-    "dir": "publish_workbench",
-    "mtime": "2026-10-01",
-    "size": 60782,
-    "is_index": true
-   }
-  ],
-  "html_total": 23,
-  "subs": [
-   {
-    "name": "core",
-    "kinds": [
-     "py"
-    ],
-    "count": 16
+  {
+   "key": "media",
+   "label": "自媒体中台",
+   "root": "D:/ai_person/personal-media-content",
+   "domain": "生活",
+   "exists": true,
+   "entries": [
+    {
+     "path": "workbench/templates/index.html",
+     "file": "index.html",
+     "dir": "workbench/templates",
+     "mtime": "2026-10-03",
+     "size": 23017,
+     "is_index": true
+    }
+   ],
+   "html_total": 4,
+   "subs": [
+    {
+     "name": "cli",
+     "kinds": [
+      "py"
+     ],
+     "count": 4
+    },
+    {
+     "name": "core",
+     "kinds": [
+      "py"
+     ],
+     "count": 15
+    },
+    {
+     "name": "creation",
+     "kinds": [],
+     "count": 1
+    },
+    {
+     "name": "publishing",
+     "kinds": [
+      "doc",
+      "py"
+     ],
+     "count": 13
+    },
+    {
+     "name": "system",
+     "kinds": [],
+     "count": 3
+    },
+    {
+     "name": "workbench",
+     "kinds": [
+      "py"
+     ],
+     "count": 4
+    }
+   ],
+   "git": {
+    "dirty": 1,
+    "branch": "main",
+    "last_commit": "2026-10-03 11:54",
+    "commits": 22,
+    "commit_msg": "清理:删除资产库验证测试工程(发布链路验证已完成,微信侧测试草稿同步清理)"
    },
-   {
-    "name": "dashboard",
-    "kinds": [
-     "py"
-    ],
-    "count": 2
-   },
-   {
-    "name": "docs",
-    "kinds": [],
-    "count": 2
-   },
-   {
-    "name": "family-life-video",
-    "kinds": [],
-    "count": 3
-   },
-   {
-    "name": "hello_doubao_video",
-    "kinds": [
-     "doc"
-    ],
-    "count": 5
-   },
-   {
-    "name": "hello_feishu",
-    "kinds": [
-     "doc",
-     "py"
-    ],
-    "count": 15
-   },
-   {
-    "name": "hello_novel",
-    "kinds": [
-     "doc"
-    ],
-    "count": 3
-   },
-   {
-    "name": "hello_webchat_official",
-    "kinds": [
-     "doc"
-    ],
-    "count": 5
-   },
-   {
-    "name": "hello_webchat_solo",
-    "kinds": [
-     "doc",
-     "py"
-    ],
-    "count": 9
-   },
-   {
-    "name": "hello_weixin_book",
-    "kinds": [
-     "doc"
-    ],
-    "count": 4
-   },
-   {
-    "name": "publish_workbench",
-    "kinds": [
-     "html",
-     "doc"
-    ],
-    "count": 2
-   }
-  ],
-  "git": {
-   "dirty": 24,
-   "branch": "main",
-   "last_commit": "2026-10-01 22:18",
-   "commits": 10,
-   "commit_msg": "治理:.gitignore 的 .claude/settings.local.json 改为递归匹配"
+   "bats": [
+    {
+     "file": "start.bat",
+     "ports": [
+      "5000"
+     ]
+    }
+   ],
+   "mtime": "2026-10-03 11:49",
+   "desc": "pip install -r requirements.txt"
   },
-  "bats": [
-   {
-    "file": "start.bat",
-    "ports": []
-   }
-  ],
-  "mtime": "2026-10-01 23:06",
-  "desc": "pip install -r requirements.txt"
- },
- {
-  "key": "money",
-  "label": "投资交易",
-  "root": "D:/ai_person/personal-money-note",
-  "domain": "生活",
-  "exists": true,
-  "entries": [
-   {
-    "path": "index.html",
-    "file": "index.html",
-    "dir": "",
-    "mtime": "2026-10-01",
-    "size": 15396,
-    "is_index": true
+  {
+   "key": "money",
+   "label": "投资交易",
+   "root": "D:/ai_person/personal-money-note",
+   "domain": "生活",
+   "exists": true,
+   "entries": [
+    {
+     "path": "index.html",
+     "file": "index.html",
+     "dir": "",
+     "mtime": "2026-10-01",
+     "size": 15396,
+     "is_index": true
+    },
+    {
+     "path": "industry/industrial_software.html",
+     "file": "industrial_software.html",
+     "dir": "industry",
+     "mtime": "2026-10-01",
+     "size": 19772,
+     "is_index": false
+    },
+    {
+     "path": "industry/industrial_software_chain.html",
+     "file": "industrial_software_chain.html",
+     "dir": "industry",
+     "mtime": "2026-10-01",
+     "size": 35940,
+     "is_index": false
+    },
+    {
+     "path": "industry/industry_tracking.html",
+     "file": "industry_tracking.html",
+     "dir": "industry",
+     "mtime": "2026-10-01",
+     "size": 18465,
+     "is_index": false
+    },
+    {
+     "path": "industry/overview.html",
+     "file": "overview.html",
+     "dir": "industry",
+     "mtime": "2026-10-01",
+     "size": 2110,
+     "is_index": false
+    },
+    {
+     "path": "learning/biography.html",
+     "file": "biography.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 19137,
+     "is_index": false
+    },
+    {
+     "path": "learning/learning.html",
+     "file": "learning.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 12457,
+     "is_index": false
+    },
+    {
+     "path": "learning/learning_news.html",
+     "file": "learning_news.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 20116,
+     "is_index": false
+    },
+    {
+     "path": "learning/learning_system.html",
+     "file": "learning_system.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 14286,
+     "is_index": false
+    },
+    {
+     "path": "learning/notes.html",
+     "file": "notes.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 2275,
+     "is_index": false
+    },
+    {
+     "path": "learning/psychological_construction.html",
+     "file": "psychological_construction.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 13266,
+     "is_index": false
+    },
+    {
+     "path": "learning/retail_psychology.html",
+     "file": "retail_psychology.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 26734,
+     "is_index": false
+    },
+    {
+     "path": "learning/scoring_system.html",
+     "file": "scoring_system.html",
+     "dir": "learning",
+     "mtime": "2026-10-01",
+     "size": 20039,
+     "is_index": false
+    },
+    {
+     "path": "market/china_future.html",
+     "file": "china_future.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 43815,
+     "is_index": false
+    },
+    {
+     "path": "market/cognition.html",
+     "file": "cognition.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 2304,
+     "is_index": false
+    },
+    {
+     "path": "market/first_mover_advantage.html",
+     "file": "first_mover_advantage.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 15456,
+     "is_index": false
+    },
+    {
+     "path": "market/fundamental_logic.html",
+     "file": "fundamental_logic.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 16361,
+     "is_index": false
+    },
+    {
+     "path": "market/market.html",
+     "file": "market.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 16851,
+     "is_index": false
+    },
+    {
+     "path": "market/market_essence.html",
+     "file": "market_essence.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 13195,
+     "is_index": false
+    },
+    {
+     "path": "market/read_news.html",
+     "file": "read_news.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 18389,
+     "is_index": false
+    },
+    {
+     "path": "market/technology_imagination.html",
+     "file": "technology_imagination.html",
+     "dir": "market",
+     "mtime": "2026-10-01",
+     "size": 14001,
+     "is_index": false
+    },
+    {
+     "path": "policy/delisting_rules.html",
+     "file": "delisting_rules.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 26687,
+     "is_index": false
+    },
+    {
+     "path": "policy/economic_conditions.html",
+     "file": "economic_conditions.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 19383,
+     "is_index": false
+    },
+    {
+     "path": "policy/economic_development.html",
+     "file": "economic_development.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 24101,
+     "is_index": false
+    },
+    {
+     "path": "policy/fed.html",
+     "file": "fed.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 18545,
+     "is_index": false
+    },
+    {
+     "path": "policy/financial_disclosure_rules.html",
+     "file": "financial_disclosure_rules.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 16073,
+     "is_index": false
+    },
+    {
+     "path": "policy/global_economic_development.html",
+     "file": "global_economic_development.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 21742,
+     "is_index": false
+    },
+    {
+     "path": "policy/government_finance.html",
+     "file": "government_finance.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 19269,
+     "is_index": false
+    },
+    {
+     "path": "policy/macro.html",
+     "file": "macro.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 2294,
+     "is_index": false
+    },
+    {
+     "path": "policy/meetings.html",
+     "file": "meetings.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 16308,
+     "is_index": false
+    },
+    {
+     "path": "policy/meetings_policy.html",
+     "file": "meetings_policy.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 1974,
+     "is_index": false
+    },
+    {
+     "path": "policy/policy.html",
+     "file": "policy.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 19843,
+     "is_index": false
+    },
+    {
+     "path": "policy/rules.html",
+     "file": "rules.html",
+     "dir": "policy",
+     "mtime": "2026-10-01",
+     "size": 2019,
+     "is_index": false
+    },
+    {
+     "path": "portal/home.html",
+     "file": "home.html",
+     "dir": "portal",
+     "mtime": "2026-10-01",
+     "size": 25282,
+     "is_index": false
+    },
+    {
+     "path": "portal/portal.html",
+     "file": "portal.html",
+     "dir": "portal",
+     "mtime": "2026-10-01",
+     "size": 17560,
+     "is_index": false
+    },
+    {
+     "path": "system/settings.html",
+     "file": "settings.html",
+     "dir": "system",
+     "mtime": "2026-10-01",
+     "size": 13625,
+     "is_index": false
+    },
+    {
+     "path": "trading/investment_plan.html",
+     "file": "investment_plan.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 23679,
+     "is_index": false
+    },
+    {
+     "path": "trading/mainipulation_process.html",
+     "file": "mainipulation_process.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 19597,
+     "is_index": false
+    },
+    {
+     "path": "trading/manipulation.html",
+     "file": "manipulation.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 2147,
+     "is_index": false
+    },
+    {
+     "path": "trading/market_resonance.html",
+     "file": "market_resonance.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 20922,
+     "is_index": false
+    },
+    {
+     "path": "trading/methods.html",
+     "file": "methods.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 2177,
+     "is_index": false
+    },
+    {
+     "path": "trading/stock_analysis.html",
+     "file": "stock_analysis.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 6101,
+     "is_index": false
+    },
+    {
+     "path": "trading/stock_cycle.html",
+     "file": "stock_cycle.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 26948,
+     "is_index": false
+    },
+    {
+     "path": "trading/stock_navigation.html",
+     "file": "stock_navigation.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 15912,
+     "is_index": false
+    },
+    {
+     "path": "trading/strategies.html",
+     "file": "strategies.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 17007,
+     "is_index": false
+    },
+    {
+     "path": "trading/system.html",
+     "file": "system.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 2094,
+     "is_index": false
+    },
+    {
+     "path": "trading/tongce_medical.html",
+     "file": "tongce_medical.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 31446,
+     "is_index": false
+    },
+    {
+     "path": "trading/trading_system.html",
+     "file": "trading_system.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 24452,
+     "is_index": false
+    },
+    {
+     "path": "trading/volume_price.html",
+     "file": "volume_price.html",
+     "dir": "trading",
+     "mtime": "2026-10-01",
+     "size": 20847,
+     "is_index": false
+    },
+    {
+     "path": "trading/retail_mistakes/index.html",
+     "file": "index.html",
+     "dir": "trading/retail_mistakes",
+     "mtime": "2026-10-01",
+     "size": 14124,
+     "is_index": true
+    }
+   ],
+   "html_total": 51,
+   "subs": [
+    {
+     "name": "industry",
+     "kinds": [],
+     "count": 8
+    },
+    {
+     "name": "learning",
+     "kinds": [],
+     "count": 16
+    },
+    {
+     "name": "market",
+     "kinds": [],
+     "count": 16
+    },
+    {
+     "name": "policy",
+     "kinds": [],
+     "count": 24
+    },
+    {
+     "name": "portal",
+     "kinds": [],
+     "count": 4
+    },
+    {
+     "name": "system",
+     "kinds": [],
+     "count": 2
+    },
+    {
+     "name": "trading",
+     "kinds": [],
+     "count": 27
+    }
+   ],
+   "git": {
+    "dirty": 1,
+    "branch": "main",
+    "last_commit": "2026-10-01 14:47",
+    "commits": 4,
+    "commit_msg": "并入 p000_0000_money → money/(保留历史),p000_0000_media → media/(工"
    },
-   {
-    "path": "industry/industrial_software.html",
-    "file": "industrial_software.html",
-    "dir": "industry",
-    "mtime": "2026-10-01",
-    "size": 19772,
-    "is_index": false
-   },
-   {
-    "path": "industry/industrial_software_chain.html",
-    "file": "industrial_software_chain.html",
-    "dir": "industry",
-    "mtime": "2026-10-01",
-    "size": 35940,
-    "is_index": false
-   },
-   {
-    "path": "industry/industry_tracking.html",
-    "file": "industry_tracking.html",
-    "dir": "industry",
-    "mtime": "2026-10-01",
-    "size": 18465,
-    "is_index": false
-   },
-   {
-    "path": "industry/overview.html",
-    "file": "overview.html",
-    "dir": "industry",
-    "mtime": "2026-10-01",
-    "size": 2110,
-    "is_index": false
-   },
-   {
-    "path": "learning/biography.html",
-    "file": "biography.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 19137,
-    "is_index": false
-   },
-   {
-    "path": "learning/learning.html",
-    "file": "learning.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 12457,
-    "is_index": false
-   },
-   {
-    "path": "learning/learning_news.html",
-    "file": "learning_news.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 20116,
-    "is_index": false
-   },
-   {
-    "path": "learning/learning_system.html",
-    "file": "learning_system.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 14286,
-    "is_index": false
-   },
-   {
-    "path": "learning/notes.html",
-    "file": "notes.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 2275,
-    "is_index": false
-   },
-   {
-    "path": "learning/psychological_construction.html",
-    "file": "psychological_construction.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 13266,
-    "is_index": false
-   },
-   {
-    "path": "learning/retail_psychology.html",
-    "file": "retail_psychology.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 26734,
-    "is_index": false
-   },
-   {
-    "path": "learning/scoring_system.html",
-    "file": "scoring_system.html",
-    "dir": "learning",
-    "mtime": "2026-10-01",
-    "size": 20039,
-    "is_index": false
-   },
-   {
-    "path": "market/china_future.html",
-    "file": "china_future.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 43815,
-    "is_index": false
-   },
-   {
-    "path": "market/cognition.html",
-    "file": "cognition.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 2304,
-    "is_index": false
-   },
-   {
-    "path": "market/first_mover_advantage.html",
-    "file": "first_mover_advantage.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 15456,
-    "is_index": false
-   },
-   {
-    "path": "market/fundamental_logic.html",
-    "file": "fundamental_logic.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 16361,
-    "is_index": false
-   },
-   {
-    "path": "market/market.html",
-    "file": "market.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 16851,
-    "is_index": false
-   },
-   {
-    "path": "market/market_essence.html",
-    "file": "market_essence.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 13195,
-    "is_index": false
-   },
-   {
-    "path": "market/read_news.html",
-    "file": "read_news.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 18389,
-    "is_index": false
-   },
-   {
-    "path": "market/technology_imagination.html",
-    "file": "technology_imagination.html",
-    "dir": "market",
-    "mtime": "2026-10-01",
-    "size": 14001,
-    "is_index": false
-   },
-   {
-    "path": "policy/delisting_rules.html",
-    "file": "delisting_rules.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 26687,
-    "is_index": false
-   },
-   {
-    "path": "policy/economic_conditions.html",
-    "file": "economic_conditions.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 19383,
-    "is_index": false
-   },
-   {
-    "path": "policy/economic_development.html",
-    "file": "economic_development.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 24101,
-    "is_index": false
-   },
-   {
-    "path": "policy/fed.html",
-    "file": "fed.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 18545,
-    "is_index": false
-   },
-   {
-    "path": "policy/financial_disclosure_rules.html",
-    "file": "financial_disclosure_rules.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 16073,
-    "is_index": false
-   },
-   {
-    "path": "policy/global_economic_development.html",
-    "file": "global_economic_development.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 21742,
-    "is_index": false
-   },
-   {
-    "path": "policy/government_finance.html",
-    "file": "government_finance.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 19269,
-    "is_index": false
-   },
-   {
-    "path": "policy/macro.html",
-    "file": "macro.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 2294,
-    "is_index": false
-   },
-   {
-    "path": "policy/meetings.html",
-    "file": "meetings.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 16308,
-    "is_index": false
-   },
-   {
-    "path": "policy/meetings_policy.html",
-    "file": "meetings_policy.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 1974,
-    "is_index": false
-   },
-   {
-    "path": "policy/policy.html",
-    "file": "policy.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 19843,
-    "is_index": false
-   },
-   {
-    "path": "policy/rules.html",
-    "file": "rules.html",
-    "dir": "policy",
-    "mtime": "2026-10-01",
-    "size": 2019,
-    "is_index": false
-   },
-   {
-    "path": "portal/home.html",
-    "file": "home.html",
-    "dir": "portal",
-    "mtime": "2026-10-01",
-    "size": 25282,
-    "is_index": false
-   },
-   {
-    "path": "portal/portal.html",
-    "file": "portal.html",
-    "dir": "portal",
-    "mtime": "2026-10-01",
-    "size": 17560,
-    "is_index": false
-   },
-   {
-    "path": "system/settings.html",
-    "file": "settings.html",
-    "dir": "system",
-    "mtime": "2026-10-01",
-    "size": 13625,
-    "is_index": false
-   },
-   {
-    "path": "trading/investment_plan.html",
-    "file": "investment_plan.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 23679,
-    "is_index": false
-   },
-   {
-    "path": "trading/mainipulation_process.html",
-    "file": "mainipulation_process.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 19597,
-    "is_index": false
-   },
-   {
-    "path": "trading/manipulation.html",
-    "file": "manipulation.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 2147,
-    "is_index": false
-   },
-   {
-    "path": "trading/market_resonance.html",
-    "file": "market_resonance.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 20922,
-    "is_index": false
-   },
-   {
-    "path": "trading/methods.html",
-    "file": "methods.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 2177,
-    "is_index": false
-   },
-   {
-    "path": "trading/stock_analysis.html",
-    "file": "stock_analysis.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 6101,
-    "is_index": false
-   },
-   {
-    "path": "trading/stock_cycle.html",
-    "file": "stock_cycle.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 26948,
-    "is_index": false
-   },
-   {
-    "path": "trading/stock_navigation.html",
-    "file": "stock_navigation.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 15912,
-    "is_index": false
-   },
-   {
-    "path": "trading/strategies.html",
-    "file": "strategies.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 17007,
-    "is_index": false
-   },
-   {
-    "path": "trading/system.html",
-    "file": "system.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 2094,
-    "is_index": false
-   },
-   {
-    "path": "trading/tongce_medical.html",
-    "file": "tongce_medical.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 31446,
-    "is_index": false
-   },
-   {
-    "path": "trading/trading_system.html",
-    "file": "trading_system.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 24452,
-    "is_index": false
-   },
-   {
-    "path": "trading/volume_price.html",
-    "file": "volume_price.html",
-    "dir": "trading",
-    "mtime": "2026-10-01",
-    "size": 20847,
-    "is_index": false
-   },
-   {
-    "path": "trading/retail_mistakes/index.html",
-    "file": "index.html",
-    "dir": "trading/retail_mistakes",
-    "mtime": "2026-10-01",
-    "size": 14124,
-    "is_index": true
-   }
-  ],
-  "html_total": 51,
-  "subs": [
-   {
-    "name": "industry",
-    "kinds": [],
-    "count": 8
-   },
-   {
-    "name": "learning",
-    "kinds": [],
-    "count": 16
-   },
-   {
-    "name": "market",
-    "kinds": [],
-    "count": 16
-   },
-   {
-    "name": "policy",
-    "kinds": [],
-    "count": 24
-   },
-   {
-    "name": "portal",
-    "kinds": [],
-    "count": 4
-   },
-   {
-    "name": "system",
-    "kinds": [],
-    "count": 2
-   },
-   {
-    "name": "trading",
-    "kinds": [],
-    "count": 27
-   }
-  ],
-  "git": {
-   "dirty": 0,
-   "branch": "main",
-   "last_commit": "2026-10-01 14:47",
-   "commits": 4,
-   "commit_msg": "并入 p000_0000_money → money/(保留历史),p000_0000_media → media/(工"
+   "bats": [
+    {
+     "file": "start.bat",
+     "ports": [
+      "3002"
+     ]
+    }
+   ],
+   "mtime": "2026-10-01 19:19",
+   "desc": "中文金融教育与交易管理 **纯前端静态原型**：零构建、零后端，浏览器打开即可使用。"
   },
-  "bats": [
-   {
-    "file": "start.bat",
-    "ports": [
-     "3004"
-    ]
-   }
-  ],
-  "mtime": "2026-10-01 19:19",
-  "desc": "中文金融教育与交易管理 **纯前端静态原型**：零构建、零后端，浏览器打开即可使用。"
- },
- {
-  "key": "tech",
-  "label": "技术知识",
-  "root": "D:/ai_person/personal-tech-knowledge",
-  "domain": "生活",
-  "exists": true,
-  "entries": [
-   {
-    "path": "index.html",
-    "file": "index.html",
-    "dir": "",
-    "mtime": "2026-10-01",
-    "size": 19444,
-    "is_index": true
+  {
+   "key": "tech",
+   "label": "技术知识",
+   "root": "D:/ai_person/personal-tech-knowledge",
+   "domain": "生活",
+   "exists": true,
+   "entries": [
+    {
+     "path": "index.html",
+     "file": "index.html",
+     "dir": "",
+     "mtime": "2026-10-01",
+     "size": 19444,
+     "is_index": true
+    },
+    {
+     "path": "blog/index.html",
+     "file": "index.html",
+     "dir": "blog",
+     "mtime": "2026-10-01",
+     "size": 30404,
+     "is_index": true
+    },
+    {
+     "path": "library/index.html",
+     "file": "index.html",
+     "dir": "library",
+     "mtime": "2026-10-01",
+     "size": 47582,
+     "is_index": true
+    },
+    {
+     "path": "library/python.html",
+     "file": "python.html",
+     "dir": "library",
+     "mtime": "2026-10-01",
+     "size": 13733,
+     "is_index": false
+    },
+    {
+     "path": "library/17年技术经验总结/09-技术知识库/index.html",
+     "file": "index.html",
+     "dir": "library/17年技术经验总结/09-技术知识库",
+     "mtime": "2026-10-01",
+     "size": 35703,
+     "is_index": true
+    }
+   ],
+   "html_total": 69,
+   "subs": [
+    {
+     "name": "blog",
+     "kinds": [
+      "html"
+     ],
+     "count": 4
+    },
+    {
+     "name": "library",
+     "kinds": [
+      "html",
+      "doc",
+      "py"
+     ],
+     "count": 33
+    }
+   ],
+   "git": {
+    "dirty": 0,
+    "branch": "main",
+    "last_commit": "2026-10-03 07:09",
+    "commits": 20,
+    "commit_msg": "站点重构:移除 ai-study 与 ollama-lab,根目录新增工作台 index.html 与 blog 子站("
    },
-   {
-    "path": "blog/index.html",
-    "file": "index.html",
-    "dir": "blog",
-    "mtime": "2026-10-01",
-    "size": 30404,
-    "is_index": true
-   },
-   {
-    "path": "library/index.html",
-    "file": "index.html",
-    "dir": "library",
-    "mtime": "2026-10-01",
-    "size": 47582,
-    "is_index": true
-   },
-   {
-    "path": "library/python.html",
-    "file": "python.html",
-    "dir": "library",
-    "mtime": "2026-10-01",
-    "size": 13733,
-    "is_index": false
-   },
-   {
-    "path": "library/17年技术经验总结/09-技术知识库/index.html",
-    "file": "index.html",
-    "dir": "library/17年技术经验总结/09-技术知识库",
-    "mtime": "2026-10-01",
-    "size": 35703,
-    "is_index": true
-   }
-  ],
-  "html_total": 69,
-  "subs": [
-   {
-    "name": "blog",
-    "kinds": [
-     "html"
-    ],
-    "count": 4
-   },
-   {
-    "name": "library",
-    "kinds": [
-     "html",
-     "doc",
-     "py"
-    ],
-    "count": 33
-   }
-  ],
-  "git": {
-   "dirty": 221,
-   "branch": "main",
-   "last_commit": "2026-10-01 21:32",
-   "commits": 19,
-   "commit_msg": "修正交叉索引相对层级(总览/README)与知识库旧死链(写作规范/学习路径);mq 文章回链层级修正"
+   "bats": [
+    {
+     "file": "start.bat",
+     "ports": [
+      "3005"
+     ]
+    }
+   ],
+   "mtime": "2026-10-02 07:36",
+   "desc": "IT 技术知识库(自 `p000_0000_it` 拆分,历史经 git-filter-repo 路径过滤保留)。"
   },
-  "bats": [
-   {
-    "file": "start.bat",
-    "ports": [
-     "3005"
-    ]
-   }
-  ],
-  "mtime": "2026-10-02 07:36",
-  "desc": "IT 技术知识库(自 `p000_0000_it` 拆分,历史经 git-filter-repo 路径过滤保留)。"
- },
- {
-  "key": "family",
-  "label": "家庭亲子",
-  "root": "D:/ai_person/personal-my-family",
-  "domain": "生活",
-  "exists": true,
-  "entries": [
-   {
-    "path": "family-check-in/index.html",
-    "file": "index.html",
-    "dir": "family-check-in",
-    "mtime": "2026-08-12",
-    "size": 816,
-    "is_index": true
+  {
+   "key": "family",
+   "label": "家庭亲子",
+   "root": "D:/ai_person/personal-my-family",
+   "domain": "生活",
+   "exists": true,
+   "entries": [
+    {
+     "path": "family-check-in/index.html",
+     "file": "index.html",
+     "dir": "family-check-in",
+     "mtime": "2026-08-12",
+     "size": 816,
+     "is_index": true
+    },
+    {
+     "path": "family-check-in-tools/_b64_mock.html",
+     "file": "_b64_mock.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 59671,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_book_new.html",
+     "file": "_book_new.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 5371,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_clip_demo.html",
+     "file": "_clip_demo.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 2040,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_emoji_test.html",
+     "file": "_emoji_test.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 1128,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_mc_new.html",
+     "file": "_mc_new.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 7501,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_mc_old.html",
+     "file": "_mc_old.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 7527,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_members_row.html",
+     "file": "_members_row.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 6519,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_mock.html",
+     "file": "_mock.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 6108,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_mr_A.html",
+     "file": "_mr_A.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 3322,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_mr_B.html",
+     "file": "_mr_B.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 3280,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_pdm_repro_A.html",
+     "file": "_pdm_repro_A.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 6762,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_pdm_repro_B.html",
+     "file": "_pdm_repro_B.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 6793,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_repro_pets_merge.html",
+     "file": "_repro_pets_merge.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 45179,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_repro_photo.html",
+     "file": "_repro_photo.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 94241,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_repro_single_view.html",
+     "file": "_repro_single_view.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 201853,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_rows_fixed.html",
+     "file": "_rows_fixed.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-09-30",
+     "size": 5769,
+     "is_index": false
+    },
+    {
+     "path": "family-check-in-tools/_toddler_render.html",
+     "file": "_toddler_render.html",
+     "dir": "family-check-in-tools",
+     "mtime": "2026-10-01",
+     "size": 8733,
+     "is_index": false
+    },
+    {
+     "path": "kids-learning-chinese/chinese-app/index.html",
+     "file": "index.html",
+     "dir": "kids-learning-chinese/chinese-app",
+     "mtime": "2026-06-06",
+     "size": 694,
+     "is_index": true
+    },
+    {
+     "path": "kids-learning-chinese/chinese-app/index_bak.html",
+     "file": "index_bak.html",
+     "dir": "kids-learning-chinese/chinese-app",
+     "mtime": "2026-06-06",
+     "size": 49335,
+     "is_index": true
+    },
+    {
+     "path": "kids-learning-chinese/game/index.html",
+     "file": "index.html",
+     "dir": "kids-learning-chinese/game",
+     "mtime": "2026-06-08",
+     "size": 7795,
+     "is_index": true
+    },
+    {
+     "path": "kids-learning-chinese/game/games/index.html",
+     "file": "index.html",
+     "dir": "kids-learning-chinese/game/games",
+     "mtime": "2026-06-20",
+     "size": 25111,
+     "is_index": true
+    }
+   ],
+   "html_total": 128,
+   "subs": [
+    {
+     "name": "family-check-in",
+     "kinds": [
+      "html",
+      "node"
+     ],
+     "count": 22
+    },
+    {
+     "name": "family-check-in-mini",
+     "kinds": [
+      "node"
+     ],
+     "count": 11
+    },
+    {
+     "name": "family-check-in-tools",
+     "kinds": [
+      "py"
+     ],
+     "count": 84
+    },
+    {
+     "name": "hello_course_pdf",
+     "kinds": [],
+     "count": 2
+    },
+    {
+     "name": "kids-coding",
+     "kinds": [],
+     "count": 5
+    },
+    {
+     "name": "kids-learning-chinese",
+     "kinds": [
+      "doc"
+     ],
+     "count": 8
+    }
+   ],
+   "git": {
+    "dirty": 18,
+    "branch": "master",
+    "last_commit": "2026-10-01 22:49",
+    "commits": 2,
+    "commit_msg": "更新 README 反映当前目录结构，新增家庭签到小程序与工具脚本"
    },
-   {
-    "path": "family-check-in-tools/_b64_mock.html",
-    "file": "_b64_mock.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 59671,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_book_new.html",
-    "file": "_book_new.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 5371,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_clip_demo.html",
-    "file": "_clip_demo.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 2040,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_emoji_test.html",
-    "file": "_emoji_test.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 1128,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_mc_new.html",
-    "file": "_mc_new.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 7501,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_mc_old.html",
-    "file": "_mc_old.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 7527,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_members_row.html",
-    "file": "_members_row.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 6519,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_mock.html",
-    "file": "_mock.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 6108,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_mr_A.html",
-    "file": "_mr_A.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 3322,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_mr_B.html",
-    "file": "_mr_B.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 3280,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_pdm_repro_A.html",
-    "file": "_pdm_repro_A.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 6762,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_pdm_repro_B.html",
-    "file": "_pdm_repro_B.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 6793,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_repro_pets_merge.html",
-    "file": "_repro_pets_merge.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 45179,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_repro_photo.html",
-    "file": "_repro_photo.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 94241,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_repro_single_view.html",
-    "file": "_repro_single_view.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 201853,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_rows_fixed.html",
-    "file": "_rows_fixed.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-09-30",
-    "size": 5769,
-    "is_index": false
-   },
-   {
-    "path": "family-check-in-tools/_toddler_render.html",
-    "file": "_toddler_render.html",
-    "dir": "family-check-in-tools",
-    "mtime": "2026-10-01",
-    "size": 8733,
-    "is_index": false
-   },
-   {
-    "path": "kids-learning-chinese/chinese-app/index.html",
-    "file": "index.html",
-    "dir": "kids-learning-chinese/chinese-app",
-    "mtime": "2026-06-06",
-    "size": 694,
-    "is_index": true
-   },
-   {
-    "path": "kids-learning-chinese/chinese-app/index_bak.html",
-    "file": "index_bak.html",
-    "dir": "kids-learning-chinese/chinese-app",
-    "mtime": "2026-06-06",
-    "size": 49335,
-    "is_index": true
-   },
-   {
-    "path": "kids-learning-chinese/game/index.html",
-    "file": "index.html",
-    "dir": "kids-learning-chinese/game",
-    "mtime": "2026-06-08",
-    "size": 7795,
-    "is_index": true
-   },
-   {
-    "path": "kids-learning-chinese/game/games/index.html",
-    "file": "index.html",
-    "dir": "kids-learning-chinese/game/games",
-    "mtime": "2026-06-20",
-    "size": 25111,
-    "is_index": true
-   }
-  ],
-  "html_total": 128,
-  "subs": [
-   {
-    "name": "family-check-in",
-    "kinds": [
-     "html",
-     "node"
-    ],
-    "count": 22
-   },
-   {
-    "name": "family-check-in-mini",
-    "kinds": [
-     "node"
-    ],
-    "count": 10
-   },
-   {
-    "name": "family-check-in-tools",
-    "kinds": [
-     "py"
-    ],
-    "count": 84
-   },
-   {
-    "name": "hello_course_pdf",
-    "kinds": [],
-    "count": 2
-   },
-   {
-    "name": "kids-coding",
-    "kinds": [],
-    "count": 5
-   },
-   {
-    "name": "kids-learning-chinese",
-    "kinds": [
-     "doc"
-    ],
-    "count": 8
-   }
-  ],
-  "git": {
-   "dirty": 13,
-   "branch": "master",
-   "last_commit": "2026-10-01 22:49",
-   "commits": 2,
-   "commit_msg": "更新 README 反映当前目录结构，新增家庭签到小程序与工具脚本"
+   "bats": [],
+   "mtime": "2026-10-01 22:48",
+   "desc": "一个围绕家庭生活组织的多项目仓库，涵盖家庭应用、亲子工具、孩子学习资料与启蒙游戏。"
   },
-  "bats": [],
-  "mtime": "2026-10-01 22:48",
-  "desc": "一个围绕家庭生活组织的多项目仓库，涵盖家庭应用、亲子工具、孩子学习资料与启蒙游戏。"
- },
- {
-  "key": "b2b",
-  "label": "B2B供应链",
-  "root": "D:/ai_work/p001_b2b_supply_chain",
-  "domain": "工作",
-  "exists": true,
-  "entries": [
-   {
-    "path": "index.html",
-    "file": "index.html",
-    "dir": "",
-    "mtime": "2026-09-28",
-    "size": 39612,
-    "is_index": true
-   },
-   {
-    "path": "product.html",
-    "file": "product.html",
-    "dir": "",
-    "mtime": "2026-08-20",
-    "size": 77050,
-    "is_index": false
-   },
-   {
-    "path": "00_html_standards/bulk-layout-pattern-gallery.html",
-    "file": "bulk-layout-pattern-gallery.html",
-    "dir": "00_html_standards",
-    "mtime": "2026-09-19",
-    "size": 37530,
-    "is_index": false
-   },
-   {
-    "path": "00_html_standards/enterprise-ui-layout-spec.html",
-    "file": "enterprise-ui-layout-spec.html",
-    "dir": "00_html_standards",
-    "mtime": "2026-09-05",
-    "size": 5043572,
-    "is_index": false
-   },
-   {
-    "path": "00_requirement_dev/competitor-analysis-6-vendors.html",
-    "file": "competitor-analysis-6-vendors.html",
-    "dir": "00_requirement_dev",
-    "mtime": "2026-09-27",
-    "size": 69938,
-    "is_index": false
-   },
-   {
-    "path": "00_tech_leader/index.html",
-    "file": "index.html",
-    "dir": "00_tech_leader",
-    "mtime": "2026-09-29",
-    "size": 17919,
-    "is_index": true
-   },
-   {
-    "path": "00_tech_leader/customer-review.html",
-    "file": "customer-review.html",
-    "dir": "00_tech_leader",
-    "mtime": "2026-09-28",
-    "size": 32921,
-    "is_index": false
-   },
-   {
-    "path": "00_tech_leader/dual-capability.html",
-    "file": "dual-capability.html",
-    "dir": "00_tech_leader",
-    "mtime": "2026-09-28",
-    "size": 21554,
-    "is_index": false
-   },
-   {
-    "path": "00_tech_leader/interview-training.html",
-    "file": "interview-training.html",
-    "dir": "00_tech_leader",
-    "mtime": "2026-09-28",
-    "size": 36149,
-    "is_index": false
-   },
-   {
-    "path": "00_tech_leader/quick-brief.html",
-    "file": "quick-brief.html",
-    "dir": "00_tech_leader",
-    "mtime": "2026-09-29",
-    "size": 36461,
-    "is_index": false
-   },
-   {
-    "path": "00_tech_leader/rectifications.html",
-    "file": "rectifications.html",
-    "dir": "00_tech_leader",
-    "mtime": "2026-09-29",
-    "size": 33879,
-    "is_index": false
-   },
-   {
-    "path": "00_tech_leader/郑大信息-供应链B2B与供应链金融方案深度分析.html",
-    "file": "郑大信息-供应链B2B与供应链金融方案深度分析.html",
-    "dir": "00_tech_leader",
-    "mtime": "2026-09-28",
-    "size": 15930,
-    "is_index": false
-   },
-   {
-    "path": "01-design/index.html",
-    "file": "index.html",
-    "dir": "01-design",
-    "mtime": "2026-10-01",
-    "size": 58109,
-    "is_index": true
-   },
-   {
-    "path": "01-design/ai-talk.html",
-    "file": "ai-talk.html",
-    "dir": "01-design",
-    "mtime": "2026-07-13",
-    "size": 144611,
-    "is_index": false
-   },
-   {
-    "path": "01-project-lifecycle/index.html",
-    "file": "index.html",
-    "dir": "01-project-lifecycle",
-    "mtime": "2026-09-28",
-    "size": 16891,
-    "is_index": true
-   },
-   {
-    "path": "01-project-lifecycle/prepare.html",
-    "file": "prepare.html",
-    "dir": "01-project-lifecycle",
-    "mtime": "2026-08-20",
-    "size": 134266,
-    "is_index": false
-   },
-   {
-    "path": "01-project-lifecycle/tech.html",
-    "file": "tech.html",
-    "dir": "01-project-lifecycle",
-    "mtime": "2026-09-28",
-    "size": 20007,
-    "is_index": false
-   },
-   {
-    "path": "01-tech-foundation/index.html",
-    "file": "index.html",
-    "dir": "01-tech-foundation",
-    "mtime": "2026-09-01",
-    "size": 51188,
-    "is_index": true
-   },
-   {
-    "path": "01-tech-foundation/GAP-ANALYSIS.html",
-    "file": "GAP-ANALYSIS.html",
-    "dir": "01-tech-foundation",
-    "mtime": "2026-09-01",
-    "size": 26055,
-    "is_index": false
-   },
-   {
-    "path": "01-tech-foundation/foundation-map.html",
-    "file": "foundation-map.html",
-    "dir": "01-tech-foundation",
-    "mtime": "2026-09-01",
-    "size": 27567,
-    "is_index": false
-   },
-   {
-    "path": "02-manage/index.html",
-    "file": "index.html",
-    "dir": "02-manage",
-    "mtime": "2026-09-10",
-    "size": 46356,
-    "is_index": true
-   },
-   {
-    "path": "02-manage-god/index.html",
-    "file": "index.html",
-    "dir": "02-manage-god",
-    "mtime": "2026-09-29",
-    "size": 31588,
-    "is_index": true
-   },
-   {
-    "path": "02-org/index.html",
-    "file": "index.html",
-    "dir": "02-org",
-    "mtime": "2026-09-29",
-    "size": 23444,
-    "is_index": true
-   },
-   {
-    "path": "02-org-kiosk/index.html",
-    "file": "index.html",
-    "dir": "02-org-kiosk",
-    "mtime": "2026-08-07",
-    "size": 2798,
-    "is_index": true
-   },
-   {
-    "path": "02-org-kiosk/self-service.html",
-    "file": "self-service.html",
-    "dir": "02-org-kiosk",
-    "mtime": "2026-09-29",
-    "size": 17741,
-    "is_index": false
-   },
-   {
-    "path": "02-sass/index.html",
-    "file": "index.html",
-    "dir": "02-sass",
-    "mtime": "2026-08-13",
-    "size": 24393,
-    "is_index": true
-   },
-   {
-    "path": "03-client/index.html",
-    "file": "index.html",
-    "dir": "03-client",
-    "mtime": "2026-09-10",
-    "size": 41294,
-    "is_index": true
-   },
-   {
-    "path": "03-mobile/index.html",
-    "file": "index.html",
-    "dir": "03-mobile",
-    "mtime": "2026-08-14",
-    "size": 18718,
-    "is_index": true
-   },
-   {
-    "path": "04-ctrm/index.html",
-    "file": "index.html",
-    "dir": "04-ctrm",
-    "mtime": "2026-09-29",
-    "size": 33439,
-    "is_index": true
-   },
-   {
-    "path": "04-driver/index.html",
-    "file": "index.html",
-    "dir": "04-driver",
-    "mtime": "2026-08-08",
-    "size": 37875,
-    "is_index": true
-   },
-   {
-    "path": "04-erp/index.html",
-    "file": "index.html",
-    "dir": "04-erp",
-    "mtime": "2026-08-19",
-    "size": 21816,
-    "is_index": true
-   },
-   {
-    "path": "04-futures-hedging-cotrol/index.html",
-    "file": "index.html",
-    "dir": "04-futures-hedging-cotrol",
-    "mtime": "2026-09-15",
-    "size": 15543,
-    "is_index": true
-   },
-   {
-    "path": "04-futures-hedging-cotrol/dashboard.html",
-    "file": "dashboard.html",
-    "dir": "04-futures-hedging-cotrol",
-    "mtime": "2026-09-15",
-    "size": 12258,
-    "is_index": false
-   },
-   {
-    "path": "04-futures-hedging-cotrol/login.html",
-    "file": "login.html",
-    "dir": "04-futures-hedging-cotrol",
-    "mtime": "2026-09-15",
-    "size": 8382,
-    "is_index": false
-   },
-   {
-    "path": "05-org-financial/index.html",
-    "file": "index.html",
-    "dir": "05-org-financial",
-    "mtime": "2026-09-29",
-    "size": 21148,
-    "is_index": true
-   },
-   {
-    "path": "05-org-financial/bank-risk.html",
-    "file": "bank-risk.html",
-    "dir": "05-org-financial",
-    "mtime": "2026-08-20",
-    "size": 14303,
-    "is_index": false
-   },
-   {
-    "path": "05-org-financial/inspection.html",
-    "file": "inspection.html",
-    "dir": "05-org-financial",
-    "mtime": "2026-08-20",
-    "size": 11151,
-    "is_index": false
-   },
-   {
-    "path": "05-org-financial/institution.html",
-    "file": "institution.html",
-    "dir": "05-org-financial",
-    "mtime": "2026-09-29",
-    "size": 29552,
-    "is_index": false
-   },
-   {
-    "path": "05-org-financial/overview.html",
-    "file": "overview.html",
-    "dir": "05-org-financial",
-    "mtime": "2026-08-20",
-    "size": 29452,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/index.html",
-    "file": "index.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 22592,
-    "is_index": true
-   },
-   {
-    "path": "05-org-logistics/command-center.html",
-    "file": "command-center.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 41016,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/contract.html",
-    "file": "contract.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 20625,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/customer.html",
-    "file": "customer.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 21622,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/dispatch.html",
-    "file": "dispatch.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 28644,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/driver-app.html",
-    "file": "driver-app.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 21088,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/overview.html",
-    "file": "overview.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 30728,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/settlement.html",
-    "file": "settlement.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 25749,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/tracking.html",
-    "file": "tracking.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 37981,
-    "is_index": false
-   },
-   {
-    "path": "05-org-logistics/vehicle.html",
-    "file": "vehicle.html",
-    "dir": "05-org-logistics",
-    "mtime": "2026-08-20",
-    "size": 22404,
-    "is_index": false
-   },
-   {
-    "path": "05-org-warehouse/index.html",
-    "file": "index.html",
-    "dir": "05-org-warehouse",
-    "mtime": "2026-09-29",
-    "size": 19092,
-    "is_index": true
-   },
-   {
-    "path": "05-screen/index.html",
-    "file": "index.html",
-    "dir": "05-screen",
-    "mtime": "2026-08-08",
-    "size": 18329,
-    "is_index": true
-   },
-   {
-    "path": "05-screen/logistics.html",
-    "file": "logistics.html",
-    "dir": "05-screen",
-    "mtime": "2026-08-05",
-    "size": 18633,
-    "is_index": false
-   },
-   {
-    "path": "05-screen/overview.html",
-    "file": "overview.html",
-    "dir": "05-screen",
-    "mtime": "2026-08-05",
-    "size": 15225,
-    "is_index": false
-   },
-   {
-    "path": "05-screen/risk.html",
-    "file": "risk.html",
-    "dir": "05-screen",
-    "mtime": "2026-08-05",
-    "size": 18924,
-    "is_index": false
-   },
-   {
-    "path": "05-screen/trade.html",
-    "file": "trade.html",
-    "dir": "05-screen",
-    "mtime": "2026-08-05",
-    "size": 16032,
-    "is_index": false
-   },
-   {
-    "path": "05-screen/warehouse.html",
-    "file": "warehouse.html",
-    "dir": "05-screen",
-    "mtime": "2026-08-10",
-    "size": 48809,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/index.html",
-    "file": "index.html",
-    "dir": "06-portal",
-    "mtime": "2026-08-01",
-    "size": 42672,
-    "is_index": true
-   },
-   {
-    "path": "06-portal/about.html",
-    "file": "about.html",
-    "dir": "06-portal",
-    "mtime": "2026-07-31",
-    "size": 47212,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/login.html",
-    "file": "login.html",
-    "dir": "06-portal",
-    "mtime": "2026-07-31",
-    "size": 30894,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/product.html",
-    "file": "product.html",
-    "dir": "06-portal",
-    "mtime": "2026-07-31",
-    "size": 49384,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/publish.html",
-    "file": "publish.html",
-    "dir": "06-portal",
-    "mtime": "2026-07-31",
-    "size": 69643,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/quotes.html",
-    "file": "quotes.html",
-    "dir": "06-portal",
-    "mtime": "2026-09-10",
-    "size": 71380,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/register.html",
-    "file": "register.html",
-    "dir": "06-portal",
-    "mtime": "2026-07-31",
-    "size": 38847,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/service.html",
-    "file": "service.html",
-    "dir": "06-portal",
-    "mtime": "2026-07-31",
-    "size": 51975,
-    "is_index": false
-   },
-   {
-    "path": "06-portal/trade.html",
-    "file": "trade.html",
-    "dir": "06-portal",
-    "mtime": "2026-09-10",
-    "size": 52174,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/index.html",
-    "file": "index.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-10",
-    "size": 6459,
-    "is_index": true
-   },
-   {
-    "path": "06-portal-ind/asean.html",
-    "file": "asean.html",
-    "dir": "06-portal-ind",
-    "mtime": "2025-11-10",
-    "size": 4555,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/asean_echarts.html",
-    "file": "asean_echarts.html",
-    "dir": "06-portal-ind",
-    "mtime": "2025-11-10",
-    "size": 0,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/cart.html",
-    "file": "cart.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 22892,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/contracts.html",
-    "file": "contracts.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 34462,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/home.html",
-    "file": "home.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 46060,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/map.html",
-    "file": "map.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 19534,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/news.html",
-    "file": "news.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 33395,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/orders.html",
-    "file": "orders.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-10",
-    "size": 30945,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/product-detail.html",
-    "file": "product-detail.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 43176,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/products.html",
-    "file": "products.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 23912,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/suppliers.html",
-    "file": "suppliers.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 41137,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-ind/ware.html",
-    "file": "ware.html",
-    "dir": "06-portal-ind",
-    "mtime": "2026-09-14",
-    "size": 82635,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-power/index.html",
-    "file": "index.html",
-    "dir": "06-portal-power",
-    "mtime": "2026-08-06",
-    "size": 12084,
-    "is_index": true
-   },
-   {
-    "path": "06-portal-power/about.html",
-    "file": "about.html",
-    "dir": "06-portal-power",
-    "mtime": "2026-08-06",
-    "size": 11981,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-power/home.html",
-    "file": "home.html",
-    "dir": "06-portal-power",
-    "mtime": "2026-08-06",
-    "size": 73850,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-power/logistics.html",
-    "file": "logistics.html",
-    "dir": "06-portal-power",
-    "mtime": "2026-08-06",
-    "size": 15914,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-power/news.html",
-    "file": "news.html",
-    "dir": "06-portal-power",
-    "mtime": "2026-08-06",
-    "size": 17006,
-    "is_index": false
-   },
-   {
-    "path": "06-portal-power/westcoal.html",
-    "file": "westcoal.html",
-    "dir": "06-portal-power",
-    "mtime": "2026-08-06",
-    "size": 59853,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/index.html",
-    "file": "index.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 57724,
-    "is_index": true
-   },
-   {
-    "path": "07-b2c/addresses.html",
-    "file": "addresses.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 16897,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/cart.html",
-    "file": "cart.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 20385,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/checkout.html",
-    "file": "checkout.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 14409,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/favorites.html",
-    "file": "favorites.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 19855,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/help.html",
-    "file": "help.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 16950,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/history.html",
-    "file": "history.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 15156,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/invoices.html",
-    "file": "invoices.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 14451,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/login.html",
-    "file": "login.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 6189,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/market.html",
-    "file": "market.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 17691,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/order-detail.html",
-    "file": "order-detail.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 9012,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/orders.html",
-    "file": "orders.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 30739,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/product-detail.html",
-    "file": "product-detail.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 22466,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/products.html",
-    "file": "products.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 29353,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/profile.html",
-    "file": "profile.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 28060,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/register.html",
-    "file": "register.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 6595,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/search.html",
-    "file": "search.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 12105,
-    "is_index": false
-   },
-   {
-    "path": "07-b2c/settings.html",
-    "file": "settings.html",
-    "dir": "07-b2c",
-    "mtime": "2026-08-01",
-    "size": 18161,
-    "is_index": false
-   },
-   {
-    "path": "08-webapp/index.html",
-    "file": "index.html",
-    "dir": "08-webapp",
-    "mtime": "2026-08-20",
-    "size": 3977,
-    "is_index": true
-   },
-   {
-    "path": "00_requirement_dev/stylepulse-mobile-external/index.html",
-    "file": "index.html",
-    "dir": "00_requirement_dev/stylepulse-mobile-external",
-    "mtime": "2025-06-07",
-    "size": 2606,
-    "is_index": true
-   },
-   {
-    "path": "01-design/form/index.html",
-    "file": "index.html",
-    "dir": "01-design/form",
-    "mtime": "2026-08-05",
-    "size": 21365,
-    "is_index": true
-   },
-   {
-    "path": "01-design/product/index.html",
-    "file": "index.html",
-    "dir": "01-design/product",
-    "mtime": "2026-08-04",
-    "size": 19147,
-    "is_index": true
-   },
-   {
-    "path": "01-design/trade/index.html",
-    "file": "index.html",
-    "dir": "01-design/trade",
-    "mtime": "2026-09-30",
-    "size": 67919,
-    "is_index": true
-   },
-   {
-    "path": "01-project-lifecycle/saas/index.html",
-    "file": "index.html",
-    "dir": "01-project-lifecycle/saas",
-    "mtime": "2026-09-14",
-    "size": 17893,
-    "is_index": true
-   },
-   {
-    "path": "02-org-kiosk/logistics/index.html",
-    "file": "index.html",
-    "dir": "02-org-kiosk/logistics",
-    "mtime": "2026-08-06",
-    "size": 18657,
-    "is_index": true
-   },
-   {
-    "path": "02-org-kiosk/warehouse/index.html",
-    "file": "index.html",
-    "dir": "02-org-kiosk/warehouse",
-    "mtime": "2026-09-14",
-    "size": 18759,
-    "is_index": true
-   },
-   {
-    "path": "02-org/portal/index.html",
-    "file": "index.html",
-    "dir": "02-org/portal",
-    "mtime": "2026-10-01",
-    "size": 19685,
-    "is_index": true
-   },
-   {
-    "path": "03-client/commodity-center/index.html",
-    "file": "index.html",
-    "dir": "03-client/commodity-center",
-    "mtime": "2026-08-20",
-    "size": 42110,
-    "is_index": true
-   },
-   {
-    "path": "03-client/dashboard/index.html",
-    "file": "index.html",
-    "dir": "03-client/dashboard",
-    "mtime": "2026-10-01",
-    "size": 15387,
-    "is_index": true
-   },
-   {
-    "path": "03-client/dispute/index.html",
-    "file": "index.html",
-    "dir": "03-client/dispute",
-    "mtime": "2026-07-13",
-    "size": 15241,
-    "is_index": true
-   },
-   {
-    "path": "03-client/document-center/index.html",
-    "file": "index.html",
-    "dir": "03-client/document-center",
-    "mtime": "2026-10-01",
-    "size": 33266,
-    "is_index": true
-   },
-   {
-    "path": "03-client/fund-center/index.html",
-    "file": "index.html",
-    "dir": "03-client/fund-center",
-    "mtime": "2026-10-01",
-    "size": 18208,
-    "is_index": true
-   },
-   {
-    "path": "03-client/message-center/index.html",
-    "file": "index.html",
-    "dir": "03-client/message-center",
-    "mtime": "2026-10-01",
-    "size": 9578,
-    "is_index": true
-   },
-   {
-    "path": "03-client/orders/index.html",
-    "file": "index.html",
-    "dir": "03-client/orders",
-    "mtime": "2026-08-08",
-    "size": 20660,
-    "is_index": true
-   },
-   {
-    "path": "03-client/settlement/index.html",
-    "file": "index.html",
-    "dir": "03-client/settlement",
-    "mtime": "2026-07-13",
-    "size": 17965,
-    "is_index": true
-   },
-   {
-    "path": "03-client/tasks/index.html",
-    "file": "index.html",
-    "dir": "03-client/tasks",
-    "mtime": "2026-07-11",
-    "size": 12528,
-    "is_index": true
-   },
-   {
-    "path": "04-erp/dashboard/index.html",
-    "file": "index.html",
-    "dir": "04-erp/dashboard",
-    "mtime": "2026-10-01",
-    "size": 15176,
-    "is_index": true
-   },
-   {
-    "path": "05-org-financial/buyer/index.html",
-    "file": "index.html",
-    "dir": "05-org-financial/buyer",
-    "mtime": "2026-10-01",
-    "size": 14823,
-    "is_index": true
-   },
-   {
-    "path": "05-org-financial/capital/index.html",
-    "file": "index.html",
-    "dir": "05-org-financial/capital",
-    "mtime": "2026-10-01",
-    "size": 29402,
-    "is_index": true
-   },
-   {
-    "path": "05-org-financial/core-enterprise/index.html",
-    "file": "index.html",
-    "dir": "05-org-financial/core-enterprise",
-    "mtime": "2026-10-01",
-    "size": 17144,
-    "is_index": true
-   },
-   {
-    "path": "05-org-financial/disposal/index.html",
-    "file": "index.html",
-    "dir": "05-org-financial/disposal",
-    "mtime": "2026-10-01",
-    "size": 17005,
-    "is_index": true
-   },
-   {
-    "path": "05-org-financial/supervisor/index.html",
-    "file": "index.html",
-    "dir": "05-org-financial/supervisor",
-    "mtime": "2026-10-01",
-    "size": 17561,
-    "is_index": true
-   },
-   {
-    "path": "06-portal-ind/html/index.html",
-    "file": "index.html",
-    "dir": "06-portal-ind/html",
-    "mtime": "2025-11-10",
-    "size": 0,
-    "is_index": true
-   },
-   {
-    "path": "06-portal-ind/profile/index.html",
-    "file": "index.html",
-    "dir": "06-portal-ind/profile",
-    "mtime": "2026-09-14",
-    "size": 54922,
-    "is_index": true
-   },
-   {
-    "path": "00_requirement_dev/套期保值风控管理系统/prototype/index.html",
-    "file": "index.html",
-    "dir": "00_requirement_dev/套期保值风控管理系统/prototype",
-    "mtime": "2026-09-24",
-    "size": 5243,
-    "is_index": true
-   },
-   {
-    "path": "00_requirement_dev/期货套保风控管理/04-futures-hedging-cotrol-v1/index.html",
-    "file": "index.html",
-    "dir": "00_requirement_dev/期货套保风控管理/04-futures-hedging-cotrol-v1",
-    "mtime": "2026-09-15",
-    "size": 15551,
-    "is_index": true
-   },
-   {
-    "path": "08-webapp/wecom/chat/index.html",
-    "file": "index.html",
-    "dir": "08-webapp/wecom/chat",
-    "mtime": "2026-08-20",
-    "size": 37565,
-    "is_index": true
-   }
-  ],
-  "html_total": 1243,
-  "subs": [
-   {
-    "name": "00_business_skills",
-    "kinds": [],
-    "count": 2
-   },
-   {
-    "name": "00_html_standards",
-    "kinds": [],
-    "count": 3
-   },
-   {
-    "name": "00_requirement_dev",
-    "kinds": [],
-    "count": 7
-   },
-   {
-    "name": "00_tech_leader",
-    "kinds": [
-     "html"
-    ],
-    "count": 10
-   },
-   {
-    "name": "01-design",
-    "kinds": [
-     "html"
-    ],
-    "count": 18
-   },
-   {
-    "name": "01-project-lifecycle",
-    "kinds": [
-     "html"
-    ],
-    "count": 9
-   },
-   {
-    "name": "01-tech-foundation",
-    "kinds": [
-     "html"
-    ],
-    "count": 23
-   },
-   {
-    "name": "02-manage",
-    "kinds": [
-     "html"
-    ],
-    "count": 16
-   },
-   {
-    "name": "02-manage-god",
-    "kinds": [
-     "html"
-    ],
-    "count": 21
-   },
-   {
-    "name": "02-org",
-    "kinds": [
-     "html"
-    ],
-    "count": 5
-   },
-   {
-    "name": "02-org-kiosk",
-    "kinds": [
-     "html"
-    ],
-    "count": 4
-   },
-   {
-    "name": "02-sass",
-    "kinds": [
-     "html"
-    ],
-    "count": 7
-   },
-   {
-    "name": "03-client",
-    "kinds": [
-     "html"
-    ],
-    "count": 15
-   },
-   {
-    "name": "03-mobile",
-    "kinds": [
-     "html"
-    ],
-    "count": 2
-   },
-   {
-    "name": "04-ctrm",
-    "kinds": [
-     "html"
-    ],
-    "count": 8
-   },
-   {
-    "name": "04-driver",
-    "kinds": [
-     "html"
-    ],
-    "count": 1
-   },
-   {
-    "name": "04-erp",
-    "kinds": [
-     "html"
-    ],
-    "count": 10
-   },
-   {
-    "name": "04-futures-hedging-cotrol",
-    "kinds": [
-     "html"
-    ],
-    "count": 12
-   },
-   {
-    "name": "05-org-financial",
-    "kinds": [
-     "html"
-    ],
-    "count": 11
-   },
-   {
-    "name": "05-org-logistics",
-    "kinds": [
-     "html"
-    ],
-    "count": 10
-   },
-   {
-    "name": "05-org-warehouse",
-    "kinds": [
-     "html"
-    ],
-    "count": 4
-   },
-   {
-    "name": "05-screen",
-    "kinds": [
-     "html"
-    ],
-    "count": 6
-   },
-   {
-    "name": "06-portal",
-    "kinds": [
-     "html"
-    ],
-    "count": 11
-   },
-   {
-    "name": "06-portal-ind",
-    "kinds": [
-     "html",
-     "doc"
-    ],
-    "count": 22
-   },
-   {
-    "name": "06-portal-power",
-    "kinds": [
-     "html"
-    ],
-    "count": 9
-   },
-   {
-    "name": "07-b2c",
-    "kinds": [
-     "html"
-    ],
-    "count": 18
-   },
-   {
-    "name": "08-webapp",
-    "kinds": [
-     "html"
-    ],
-    "count": 3
-   }
-  ],
-  "git": {
-   "dirty": 113,
-   "branch": "main",
-   "last_commit": "2026-09-29 21:47",
-   "commits": 54,
-   "commit_msg": "修复CTRM业务中心默认页死链(trade-list→trade-own)"
+  {
+   "key": "readbook",
+   "label": "读书拆书",
+   "root": "D:/ai_person/personal-read-book",
+   "domain": "生活",
+   "exists": true,
+   "entries": [
+    {
+     "path": "analyses/九鼎记分析.html",
+     "file": "九鼎记分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 11434,
+     "is_index": false
+    },
+    {
+     "path": "analyses/吞噬星空2起源大陆分析.html",
+     "file": "吞噬星空2起源大陆分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 18537,
+     "is_index": false
+    },
+    {
+     "path": "analyses/吞噬星空分析.html",
+     "file": "吞噬星空分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 12575,
+     "is_index": false
+    },
+    {
+     "path": "analyses/孙子兵法蒸馏.html",
+     "file": "孙子兵法蒸馏.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 35062,
+     "is_index": false
+    },
+    {
+     "path": "analyses/宇宙职业选手分析.html",
+     "file": "宇宙职业选手分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 12754,
+     "is_index": false
+    },
+    {
+     "path": "analyses/寸芒分析.html",
+     "file": "寸芒分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 11203,
+     "is_index": false
+    },
+    {
+     "path": "analyses/我吃西红柿全部小说总览.html",
+     "file": "我吃西红柿全部小说总览.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 41759,
+     "is_index": false
+    },
+    {
+     "path": "analyses/星峰传说分析.html",
+     "file": "星峰传说分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 12764,
+     "is_index": false
+    },
+    {
+     "path": "analyses/星辰变分析.html",
+     "file": "星辰变分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 12375,
+     "is_index": false
+    },
+    {
+     "path": "analyses/沧元图分析.html",
+     "file": "沧元图分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 12087,
+     "is_index": false
+    },
+    {
+     "path": "analyses/牧神记分析.html",
+     "file": "牧神记分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 10857,
+     "is_index": false
+    },
+    {
+     "path": "analyses/牧神记深度阅读.html",
+     "file": "牧神记深度阅读.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 56758,
+     "is_index": false
+    },
+    {
+     "path": "analyses/盘龙分析.html",
+     "file": "盘龙分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 12566,
+     "is_index": false
+    },
+    {
+     "path": "analyses/盘龙时间线.html",
+     "file": "盘龙时间线.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 31165,
+     "is_index": false
+    },
+    {
+     "path": "analyses/莽荒纪分析.html",
+     "file": "莽荒纪分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 12343,
+     "is_index": false
+    },
+    {
+     "path": "analyses/雪鹰领主分析.html",
+     "file": "雪鹰领主分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 11362,
+     "is_index": false
+    },
+    {
+     "path": "analyses/飞剑问道分析.html",
+     "file": "飞剑问道分析.html",
+     "dir": "analyses",
+     "mtime": "2026-10-01",
+     "size": 11361,
+     "is_index": false
+    },
+    {
+     "path": "test/site/index.html",
+     "file": "index.html",
+     "dir": "test/site",
+     "mtime": "2026-10-03",
+     "size": 1007425,
+     "is_index": true
+    }
+   ],
+   "html_total": 18,
+   "subs": [
+    {
+     "name": "analyses",
+     "kinds": [],
+     "count": 17
+    },
+    {
+     "name": "books",
+     "kinds": [],
+     "count": 2
+    },
+    {
+     "name": "test",
+     "kinds": [],
+     "count": 6
+    }
+   ],
+   "git": {
+    "dirty": 0,
+    "branch": "",
+    "last_commit": "",
+    "commits": 0
+   },
+   "bats": [],
+   "mtime": "2026-10-03 10:36",
+   "desc": "我吃西红柿等网文与《孙子兵法》等书籍的深度分析 HTML 产出，供阅读、选题与内容二次创作。"
   },
-  "bats": [
-   {
-    "file": "start.bat",
-    "ports": [
-     "3003"
-    ]
-   }
-  ],
-  "mtime": "2026-09-30 19:00",
-  "desc": "大宗商品合同履约与供应链产业电商的**纯静态可视化原型**。无构建工具、无后端、无测试框架；所有页面为自包含 HTML，依赖公共 CDN。"
- },
- {
-  "key": "axure",
-  "label": "Axure原型",
-  "root": "D:/ai_work/p001_all_html_axure",
-  "domain": "工作",
-  "exists": true,
-  "entries": [
-   {
-    "path": "p001_1033_design_claude/index.html",
-    "file": "index.html",
-    "dir": "p001_1033_design_claude",
-    "mtime": "2026-07-09",
-    "size": 10084,
-    "is_index": true
+  {
+   "key": "aieng",
+   "label": "AI 工程",
+   "root": "D:/ai_person/personal-ai-engineering",
+   "domain": "生活",
+   "exists": true,
+   "entries": [
+    {
+     "path": "agent-harness/snake.html",
+     "file": "snake.html",
+     "dir": "agent-harness",
+     "mtime": "2026-04-29",
+     "size": 21121,
+     "is_index": false
+    },
+    {
+     "path": "ai-study-note/index.html",
+     "file": "index.html",
+     "dir": "ai-study-note",
+     "mtime": "2026-10-01",
+     "size": 11093,
+     "is_index": true
+    },
+    {
+     "path": "ai-study-note/md-viewer.html",
+     "file": "md-viewer.html",
+     "dir": "ai-study-note",
+     "mtime": "2026-10-01",
+     "size": 10180,
+     "is_index": false
+    },
+    {
+     "path": "ai-workbench/index.html",
+     "file": "index.html",
+     "dir": "ai-workbench",
+     "mtime": "2026-10-02",
+     "size": 48212,
+     "is_index": true
+    },
+    {
+     "path": "agent-harness/web/index.html",
+     "file": "index.html",
+     "dir": "agent-harness/web",
+     "mtime": "2026-04-23",
+     "size": 63800,
+     "is_index": true
+    },
+    {
+     "path": "ollama-lab/templates/index.html",
+     "file": "index.html",
+     "dir": "ollama-lab/templates",
+     "mtime": "2026-10-01",
+     "size": 3977,
+     "is_index": true
+    },
+    {
+     "path": "ai-study-note/courses/exam/index.html",
+     "file": "index.html",
+     "dir": "ai-study-note/courses/exam",
+     "mtime": "2026-10-01",
+     "size": 23012,
+     "is_index": true
+    },
+    {
+     "path": "ai_study_py/30_slides/llm_base10/index.html",
+     "file": "index.html",
+     "dir": "ai_study_py/30_slides/llm_base10",
+     "mtime": "2025-08-05",
+     "size": 13393,
+     "is_index": true
+    },
+    {
+     "path": "ai_study_py/30_slides/llm_base20/index.html",
+     "file": "index.html",
+     "dir": "ai_study_py/30_slides/llm_base20",
+     "mtime": "2025-08-05",
+     "size": 14306,
+     "is_index": true
+    },
+    {
+     "path": "ollama-lab/study/templates/index.html",
+     "file": "index.html",
+     "dir": "ollama-lab/study/templates",
+     "mtime": "2026-10-01",
+     "size": 3977,
+     "is_index": true
+    }
+   ],
+   "html_total": 85,
+   "subs": [
+    {
+     "name": "agent-harness",
+     "kinds": [
+      "doc",
+      "bat",
+      "py"
+     ],
+     "count": 35
+    },
+    {
+     "name": "ai-study-note",
+     "kinds": [
+      "html",
+      "doc",
+      "bat"
+     ],
+     "count": 12
+    },
+    {
+     "name": "ai-workbench",
+     "kinds": [
+      "html"
+     ],
+     "count": 1
+    },
+    {
+     "name": "ai_study_py",
+     "kinds": [
+      "doc"
+     ],
+     "count": 11
+    },
+    {
+     "name": "ollama-lab",
+     "kinds": [
+      "doc",
+      "py"
+     ],
+     "count": 8
+    }
+   ],
+   "git": {
+    "dirty": 0,
+    "branch": "main",
+    "last_commit": "2026-10-03 07:06",
+    "commits": 5,
+    "commit_msg": "新增 ai-workbench 工作台门户子项目，根 README 同步更新为五个子项目"
    },
-   {
-    "path": "p001_1033_mes/index.html",
-    "file": "index.html",
-    "dir": "p001_1033_mes",
-    "mtime": "2026-07-15",
-    "size": 15614,
-    "is_index": true
-   },
-   {
-    "path": "p001_farm_purchase/index.html",
-    "file": "index.html",
-    "dir": "p001_farm_purchase",
-    "mtime": "2026-08-27",
-    "size": 10816,
-    "is_index": true
-   },
-   {
-    "path": "p001_farm_purchase/architecture.html",
-    "file": "architecture.html",
-    "dir": "p001_farm_purchase",
-    "mtime": "2026-08-26",
-    "size": 4809,
-    "is_index": false
-   },
-   {
-    "path": "p001_farm_purchase/broker-flow.html",
-    "file": "broker-flow.html",
-    "dir": "p001_farm_purchase",
-    "mtime": "2026-08-26",
-    "size": 4228,
-    "is_index": false
-   },
-   {
-    "path": "p001_farm_purchase/business-flow.html",
-    "file": "business-flow.html",
-    "dir": "p001_farm_purchase",
-    "mtime": "2026-08-25",
-    "size": 12965,
-    "is_index": false
-   },
-   {
-    "path": "p001_farm_purchase/development-estimate.html",
-    "file": "development-estimate.html",
-    "dir": "p001_farm_purchase",
-    "mtime": "2026-08-26",
-    "size": 23698,
-    "is_index": false
-   },
-   {
-    "path": "p001_farm_purchase/merchant-flow.html",
-    "file": "merchant-flow.html",
-    "dir": "p001_farm_purchase",
-    "mtime": "2026-08-26",
-    "size": 4230,
-    "is_index": false
-   },
-   {
-    "path": "p001_farm_purchase/overview.html",
-    "file": "overview.html",
-    "dir": "p001_farm_purchase",
-    "mtime": "2026-08-25",
-    "size": 15453,
-    "is_index": false
-   },
-   {
-    "path": "p001_multi_market_agreement/index.html",
-    "file": "index.html",
-    "dir": "p001_multi_market_agreement",
-    "mtime": "2026-09-11",
-    "size": 12908,
-    "is_index": true
-   },
-   {
-    "path": "p001_vr_shop/index.html",
-    "file": "index.html",
-    "dir": "p001_vr_shop",
-    "mtime": "2025-06-26",
-    "size": 359,
-    "is_index": true
-   },
-   {
-    "path": "p001_1033_mes/01-design/index.html",
-    "file": "index.html",
-    "dir": "p001_1033_mes/01-design",
-    "mtime": "2026-07-15",
-    "size": 8343,
-    "is_index": true
-   },
-   {
-    "path": "p001_1033_mes/02-manage/index.html",
-    "file": "index.html",
-    "dir": "p001_1033_mes/02-manage",
-    "mtime": "2026-07-15",
-    "size": 8016,
-    "is_index": true
-   },
-   {
-    "path": "p001_1033_mes/03-client/index.html",
-    "file": "index.html",
-    "dir": "p001_1033_mes/03-client",
-    "mtime": "2026-07-14",
-    "size": 7021,
-    "is_index": true
-   },
-   {
-    "path": "p001_reverse_invoicing/小程序原型/index.html",
-    "file": "index.html",
-    "dir": "p001_reverse_invoicing/小程序原型",
-    "mtime": "2026-09-17",
-    "size": 7695,
-    "is_index": true
-   },
-   {
-    "path": "p001_1033_mes/03-client/dashboard/index.html",
-    "file": "index.html",
-    "dir": "p001_1033_mes/03-client/dashboard",
-    "mtime": "2026-07-15",
-    "size": 52682,
-    "is_index": true
-   }
-  ],
-  "html_total": 96,
-  "subs": [
-   {
-    "name": "p001_1033_design_claude",
-    "kinds": [
-     "html",
-     "doc"
-    ],
-    "count": 9
-   },
-   {
-    "name": "p001_1033_mes",
-    "kinds": [
-     "html",
-     "bat"
-    ],
-    "count": 6
-   },
-   {
-    "name": "p001_farm_purchase",
-    "kinds": [
-     "html"
-    ],
-    "count": 14
-   },
-   {
-    "name": "p001_multi_market_agreement",
-    "kinds": [
-     "html"
-    ],
-    "count": 6
-   },
-   {
-    "name": "p001_reverse_invoicing",
-    "kinds": [],
-    "count": 5
-   },
-   {
-    "name": "p001_vr_shop",
-    "kinds": [
-     "html",
-     "doc",
-     "node"
-    ],
-    "count": 11
-   }
-  ],
-  "git": {
-   "dirty": 2,
-   "branch": "master",
-   "last_commit": "2026-09-11 09:52",
-   "commits": 1,
-   "commit_msg": "first message"
+   "bats": [],
+   "mtime": "2026-10-02 07:57",
+   "desc": "个人 AI 工程学习工作区，聚合五个子项目：多智能体框架实践、AI 技术栈学习主工程、本地大模型实验、AI 课程站与面试题库、AI 工作台门户。"
   },
-  "bats": [],
-  "mtime": "2026-09-16 17:43",
-  "desc": ""
- }
-]
+  {
+   "key": "b2b",
+   "label": "B2B 供应链",
+   "root": "D:/ai_work/p001_b2b_supply_chain",
+   "domain": "工作",
+   "exists": true,
+   "entries": [
+    {
+     "path": "index.html",
+     "file": "index.html",
+     "dir": "",
+     "mtime": "2026-09-28",
+     "size": 39612,
+     "is_index": true
+    },
+    {
+     "path": "product.html",
+     "file": "product.html",
+     "dir": "",
+     "mtime": "2026-08-20",
+     "size": 77050,
+     "is_index": false
+    },
+    {
+     "path": "00_html_standards/bulk-layout-pattern-gallery.html",
+     "file": "bulk-layout-pattern-gallery.html",
+     "dir": "00_html_standards",
+     "mtime": "2026-09-19",
+     "size": 37530,
+     "is_index": false
+    },
+    {
+     "path": "00_html_standards/enterprise-ui-layout-spec.html",
+     "file": "enterprise-ui-layout-spec.html",
+     "dir": "00_html_standards",
+     "mtime": "2026-09-05",
+     "size": 5043572,
+     "is_index": false
+    },
+    {
+     "path": "00_requirement_dev/competitor-analysis-6-vendors.html",
+     "file": "competitor-analysis-6-vendors.html",
+     "dir": "00_requirement_dev",
+     "mtime": "2026-09-27",
+     "size": 69938,
+     "is_index": false
+    },
+    {
+     "path": "00_tech_leader/index.html",
+     "file": "index.html",
+     "dir": "00_tech_leader",
+     "mtime": "2026-09-29",
+     "size": 17919,
+     "is_index": true
+    },
+    {
+     "path": "00_tech_leader/customer-review.html",
+     "file": "customer-review.html",
+     "dir": "00_tech_leader",
+     "mtime": "2026-09-28",
+     "size": 32921,
+     "is_index": false
+    },
+    {
+     "path": "00_tech_leader/dual-capability.html",
+     "file": "dual-capability.html",
+     "dir": "00_tech_leader",
+     "mtime": "2026-09-28",
+     "size": 21554,
+     "is_index": false
+    },
+    {
+     "path": "00_tech_leader/interview-training.html",
+     "file": "interview-training.html",
+     "dir": "00_tech_leader",
+     "mtime": "2026-09-28",
+     "size": 36149,
+     "is_index": false
+    },
+    {
+     "path": "00_tech_leader/quick-brief.html",
+     "file": "quick-brief.html",
+     "dir": "00_tech_leader",
+     "mtime": "2026-09-29",
+     "size": 36461,
+     "is_index": false
+    },
+    {
+     "path": "00_tech_leader/rectifications.html",
+     "file": "rectifications.html",
+     "dir": "00_tech_leader",
+     "mtime": "2026-09-29",
+     "size": 33879,
+     "is_index": false
+    },
+    {
+     "path": "00_tech_leader/郑大信息-供应链B2B与供应链金融方案深度分析.html",
+     "file": "郑大信息-供应链B2B与供应链金融方案深度分析.html",
+     "dir": "00_tech_leader",
+     "mtime": "2026-09-28",
+     "size": 15930,
+     "is_index": false
+    },
+    {
+     "path": "01-design/index.html",
+     "file": "index.html",
+     "dir": "01-design",
+     "mtime": "2026-10-01",
+     "size": 58109,
+     "is_index": true
+    },
+    {
+     "path": "01-design/ai-talk.html",
+     "file": "ai-talk.html",
+     "dir": "01-design",
+     "mtime": "2026-07-13",
+     "size": 144611,
+     "is_index": false
+    },
+    {
+     "path": "01-project-lifecycle/index.html",
+     "file": "index.html",
+     "dir": "01-project-lifecycle",
+     "mtime": "2026-09-28",
+     "size": 16891,
+     "is_index": true
+    },
+    {
+     "path": "01-project-lifecycle/prepare.html",
+     "file": "prepare.html",
+     "dir": "01-project-lifecycle",
+     "mtime": "2026-08-20",
+     "size": 134266,
+     "is_index": false
+    },
+    {
+     "path": "01-project-lifecycle/tech.html",
+     "file": "tech.html",
+     "dir": "01-project-lifecycle",
+     "mtime": "2026-09-28",
+     "size": 20007,
+     "is_index": false
+    },
+    {
+     "path": "01-tech-foundation/index.html",
+     "file": "index.html",
+     "dir": "01-tech-foundation",
+     "mtime": "2026-09-01",
+     "size": 51188,
+     "is_index": true
+    },
+    {
+     "path": "01-tech-foundation/GAP-ANALYSIS.html",
+     "file": "GAP-ANALYSIS.html",
+     "dir": "01-tech-foundation",
+     "mtime": "2026-09-01",
+     "size": 26055,
+     "is_index": false
+    },
+    {
+     "path": "01-tech-foundation/foundation-map.html",
+     "file": "foundation-map.html",
+     "dir": "01-tech-foundation",
+     "mtime": "2026-09-01",
+     "size": 27567,
+     "is_index": false
+    },
+    {
+     "path": "02-manage/index.html",
+     "file": "index.html",
+     "dir": "02-manage",
+     "mtime": "2026-09-10",
+     "size": 46356,
+     "is_index": true
+    },
+    {
+     "path": "02-manage-god/index.html",
+     "file": "index.html",
+     "dir": "02-manage-god",
+     "mtime": "2026-09-29",
+     "size": 31588,
+     "is_index": true
+    },
+    {
+     "path": "02-org/index.html",
+     "file": "index.html",
+     "dir": "02-org",
+     "mtime": "2026-09-29",
+     "size": 23444,
+     "is_index": true
+    },
+    {
+     "path": "02-org-kiosk/index.html",
+     "file": "index.html",
+     "dir": "02-org-kiosk",
+     "mtime": "2026-08-07",
+     "size": 2798,
+     "is_index": true
+    },
+    {
+     "path": "02-org-kiosk/self-service.html",
+     "file": "self-service.html",
+     "dir": "02-org-kiosk",
+     "mtime": "2026-09-29",
+     "size": 17741,
+     "is_index": false
+    },
+    {
+     "path": "02-sass/index.html",
+     "file": "index.html",
+     "dir": "02-sass",
+     "mtime": "2026-08-13",
+     "size": 24393,
+     "is_index": true
+    },
+    {
+     "path": "03-client/index.html",
+     "file": "index.html",
+     "dir": "03-client",
+     "mtime": "2026-09-10",
+     "size": 41294,
+     "is_index": true
+    },
+    {
+     "path": "03-mobile/index.html",
+     "file": "index.html",
+     "dir": "03-mobile",
+     "mtime": "2026-08-14",
+     "size": 18718,
+     "is_index": true
+    },
+    {
+     "path": "04-ctrm/index.html",
+     "file": "index.html",
+     "dir": "04-ctrm",
+     "mtime": "2026-09-29",
+     "size": 33439,
+     "is_index": true
+    },
+    {
+     "path": "04-driver/index.html",
+     "file": "index.html",
+     "dir": "04-driver",
+     "mtime": "2026-08-08",
+     "size": 37875,
+     "is_index": true
+    },
+    {
+     "path": "04-erp/index.html",
+     "file": "index.html",
+     "dir": "04-erp",
+     "mtime": "2026-08-19",
+     "size": 21816,
+     "is_index": true
+    },
+    {
+     "path": "04-futures-hedging-cotrol/index.html",
+     "file": "index.html",
+     "dir": "04-futures-hedging-cotrol",
+     "mtime": "2026-09-15",
+     "size": 15543,
+     "is_index": true
+    },
+    {
+     "path": "04-futures-hedging-cotrol/dashboard.html",
+     "file": "dashboard.html",
+     "dir": "04-futures-hedging-cotrol",
+     "mtime": "2026-09-15",
+     "size": 12258,
+     "is_index": false
+    },
+    {
+     "path": "04-futures-hedging-cotrol/login.html",
+     "file": "login.html",
+     "dir": "04-futures-hedging-cotrol",
+     "mtime": "2026-09-15",
+     "size": 8382,
+     "is_index": false
+    },
+    {
+     "path": "05-org-financial/index.html",
+     "file": "index.html",
+     "dir": "05-org-financial",
+     "mtime": "2026-09-29",
+     "size": 21148,
+     "is_index": true
+    },
+    {
+     "path": "05-org-financial/bank-risk.html",
+     "file": "bank-risk.html",
+     "dir": "05-org-financial",
+     "mtime": "2026-08-20",
+     "size": 14303,
+     "is_index": false
+    },
+    {
+     "path": "05-org-financial/inspection.html",
+     "file": "inspection.html",
+     "dir": "05-org-financial",
+     "mtime": "2026-08-20",
+     "size": 11151,
+     "is_index": false
+    },
+    {
+     "path": "05-org-financial/institution.html",
+     "file": "institution.html",
+     "dir": "05-org-financial",
+     "mtime": "2026-09-29",
+     "size": 29552,
+     "is_index": false
+    },
+    {
+     "path": "05-org-financial/overview.html",
+     "file": "overview.html",
+     "dir": "05-org-financial",
+     "mtime": "2026-08-20",
+     "size": 29452,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/index.html",
+     "file": "index.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 22592,
+     "is_index": true
+    },
+    {
+     "path": "05-org-logistics/command-center.html",
+     "file": "command-center.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 41016,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/contract.html",
+     "file": "contract.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 20625,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/customer.html",
+     "file": "customer.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 21622,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/dispatch.html",
+     "file": "dispatch.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 28644,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/driver-app.html",
+     "file": "driver-app.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 21088,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/overview.html",
+     "file": "overview.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 30728,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/settlement.html",
+     "file": "settlement.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 25749,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/tracking.html",
+     "file": "tracking.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 37981,
+     "is_index": false
+    },
+    {
+     "path": "05-org-logistics/vehicle.html",
+     "file": "vehicle.html",
+     "dir": "05-org-logistics",
+     "mtime": "2026-08-20",
+     "size": 22404,
+     "is_index": false
+    },
+    {
+     "path": "05-org-warehouse/index.html",
+     "file": "index.html",
+     "dir": "05-org-warehouse",
+     "mtime": "2026-09-29",
+     "size": 19092,
+     "is_index": true
+    },
+    {
+     "path": "05-screen/index.html",
+     "file": "index.html",
+     "dir": "05-screen",
+     "mtime": "2026-08-08",
+     "size": 18329,
+     "is_index": true
+    },
+    {
+     "path": "05-screen/logistics.html",
+     "file": "logistics.html",
+     "dir": "05-screen",
+     "mtime": "2026-08-05",
+     "size": 18633,
+     "is_index": false
+    },
+    {
+     "path": "05-screen/overview.html",
+     "file": "overview.html",
+     "dir": "05-screen",
+     "mtime": "2026-08-05",
+     "size": 15225,
+     "is_index": false
+    },
+    {
+     "path": "05-screen/risk.html",
+     "file": "risk.html",
+     "dir": "05-screen",
+     "mtime": "2026-08-05",
+     "size": 18924,
+     "is_index": false
+    },
+    {
+     "path": "05-screen/trade.html",
+     "file": "trade.html",
+     "dir": "05-screen",
+     "mtime": "2026-08-05",
+     "size": 16032,
+     "is_index": false
+    },
+    {
+     "path": "05-screen/warehouse.html",
+     "file": "warehouse.html",
+     "dir": "05-screen",
+     "mtime": "2026-08-10",
+     "size": 48809,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/index.html",
+     "file": "index.html",
+     "dir": "06-portal",
+     "mtime": "2026-08-01",
+     "size": 42672,
+     "is_index": true
+    },
+    {
+     "path": "06-portal/about.html",
+     "file": "about.html",
+     "dir": "06-portal",
+     "mtime": "2026-07-31",
+     "size": 47212,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/login.html",
+     "file": "login.html",
+     "dir": "06-portal",
+     "mtime": "2026-07-31",
+     "size": 30894,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/product.html",
+     "file": "product.html",
+     "dir": "06-portal",
+     "mtime": "2026-07-31",
+     "size": 49384,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/publish.html",
+     "file": "publish.html",
+     "dir": "06-portal",
+     "mtime": "2026-07-31",
+     "size": 69643,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/quotes.html",
+     "file": "quotes.html",
+     "dir": "06-portal",
+     "mtime": "2026-09-10",
+     "size": 71380,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/register.html",
+     "file": "register.html",
+     "dir": "06-portal",
+     "mtime": "2026-07-31",
+     "size": 38847,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/service.html",
+     "file": "service.html",
+     "dir": "06-portal",
+     "mtime": "2026-07-31",
+     "size": 51975,
+     "is_index": false
+    },
+    {
+     "path": "06-portal/trade.html",
+     "file": "trade.html",
+     "dir": "06-portal",
+     "mtime": "2026-09-10",
+     "size": 52174,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/index.html",
+     "file": "index.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-10",
+     "size": 6459,
+     "is_index": true
+    },
+    {
+     "path": "06-portal-ind/asean.html",
+     "file": "asean.html",
+     "dir": "06-portal-ind",
+     "mtime": "2025-11-10",
+     "size": 4555,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/asean_echarts.html",
+     "file": "asean_echarts.html",
+     "dir": "06-portal-ind",
+     "mtime": "2025-11-10",
+     "size": 0,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/cart.html",
+     "file": "cart.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 22892,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/contracts.html",
+     "file": "contracts.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 34462,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/home.html",
+     "file": "home.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 46060,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/map.html",
+     "file": "map.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 19534,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/news.html",
+     "file": "news.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 33395,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/orders.html",
+     "file": "orders.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-10",
+     "size": 30945,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/product-detail.html",
+     "file": "product-detail.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 43176,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/products.html",
+     "file": "products.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 23912,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/suppliers.html",
+     "file": "suppliers.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 41137,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-ind/ware.html",
+     "file": "ware.html",
+     "dir": "06-portal-ind",
+     "mtime": "2026-09-14",
+     "size": 82635,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-power/index.html",
+     "file": "index.html",
+     "dir": "06-portal-power",
+     "mtime": "2026-08-06",
+     "size": 12084,
+     "is_index": true
+    },
+    {
+     "path": "06-portal-power/about.html",
+     "file": "about.html",
+     "dir": "06-portal-power",
+     "mtime": "2026-08-06",
+     "size": 11981,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-power/home.html",
+     "file": "home.html",
+     "dir": "06-portal-power",
+     "mtime": "2026-08-06",
+     "size": 73850,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-power/logistics.html",
+     "file": "logistics.html",
+     "dir": "06-portal-power",
+     "mtime": "2026-08-06",
+     "size": 15914,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-power/news.html",
+     "file": "news.html",
+     "dir": "06-portal-power",
+     "mtime": "2026-08-06",
+     "size": 17006,
+     "is_index": false
+    },
+    {
+     "path": "06-portal-power/westcoal.html",
+     "file": "westcoal.html",
+     "dir": "06-portal-power",
+     "mtime": "2026-08-06",
+     "size": 59853,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/index.html",
+     "file": "index.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 57724,
+     "is_index": true
+    },
+    {
+     "path": "07-b2c/addresses.html",
+     "file": "addresses.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 16897,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/cart.html",
+     "file": "cart.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 20385,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/checkout.html",
+     "file": "checkout.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 14409,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/favorites.html",
+     "file": "favorites.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 19855,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/help.html",
+     "file": "help.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 16950,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/history.html",
+     "file": "history.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 15156,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/invoices.html",
+     "file": "invoices.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 14451,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/login.html",
+     "file": "login.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 6189,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/market.html",
+     "file": "market.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 17691,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/order-detail.html",
+     "file": "order-detail.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 9012,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/orders.html",
+     "file": "orders.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 30739,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/product-detail.html",
+     "file": "product-detail.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 22466,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/products.html",
+     "file": "products.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 29353,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/profile.html",
+     "file": "profile.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 28060,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/register.html",
+     "file": "register.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 6595,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/search.html",
+     "file": "search.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 12105,
+     "is_index": false
+    },
+    {
+     "path": "07-b2c/settings.html",
+     "file": "settings.html",
+     "dir": "07-b2c",
+     "mtime": "2026-08-01",
+     "size": 18161,
+     "is_index": false
+    },
+    {
+     "path": "08-webapp/index.html",
+     "file": "index.html",
+     "dir": "08-webapp",
+     "mtime": "2026-08-20",
+     "size": 3977,
+     "is_index": true
+    },
+    {
+     "path": "00_requirement_dev/stylepulse-mobile-external/index.html",
+     "file": "index.html",
+     "dir": "00_requirement_dev/stylepulse-mobile-external",
+     "mtime": "2025-06-07",
+     "size": 2606,
+     "is_index": true
+    },
+    {
+     "path": "01-design/form/index.html",
+     "file": "index.html",
+     "dir": "01-design/form",
+     "mtime": "2026-08-05",
+     "size": 21365,
+     "is_index": true
+    },
+    {
+     "path": "01-design/product/index.html",
+     "file": "index.html",
+     "dir": "01-design/product",
+     "mtime": "2026-08-04",
+     "size": 19147,
+     "is_index": true
+    },
+    {
+     "path": "01-design/trade/index.html",
+     "file": "index.html",
+     "dir": "01-design/trade",
+     "mtime": "2026-09-30",
+     "size": 67919,
+     "is_index": true
+    },
+    {
+     "path": "01-project-lifecycle/saas/index.html",
+     "file": "index.html",
+     "dir": "01-project-lifecycle/saas",
+     "mtime": "2026-09-14",
+     "size": 17893,
+     "is_index": true
+    },
+    {
+     "path": "02-org-kiosk/logistics/index.html",
+     "file": "index.html",
+     "dir": "02-org-kiosk/logistics",
+     "mtime": "2026-08-06",
+     "size": 18657,
+     "is_index": true
+    },
+    {
+     "path": "02-org-kiosk/warehouse/index.html",
+     "file": "index.html",
+     "dir": "02-org-kiosk/warehouse",
+     "mtime": "2026-09-14",
+     "size": 18759,
+     "is_index": true
+    },
+    {
+     "path": "02-org/portal/index.html",
+     "file": "index.html",
+     "dir": "02-org/portal",
+     "mtime": "2026-10-01",
+     "size": 19685,
+     "is_index": true
+    },
+    {
+     "path": "03-client/commodity-center/index.html",
+     "file": "index.html",
+     "dir": "03-client/commodity-center",
+     "mtime": "2026-08-20",
+     "size": 42110,
+     "is_index": true
+    },
+    {
+     "path": "03-client/dashboard/index.html",
+     "file": "index.html",
+     "dir": "03-client/dashboard",
+     "mtime": "2026-10-01",
+     "size": 15387,
+     "is_index": true
+    },
+    {
+     "path": "03-client/dispute/index.html",
+     "file": "index.html",
+     "dir": "03-client/dispute",
+     "mtime": "2026-07-13",
+     "size": 15241,
+     "is_index": true
+    },
+    {
+     "path": "03-client/document-center/index.html",
+     "file": "index.html",
+     "dir": "03-client/document-center",
+     "mtime": "2026-10-01",
+     "size": 33266,
+     "is_index": true
+    },
+    {
+     "path": "03-client/fund-center/index.html",
+     "file": "index.html",
+     "dir": "03-client/fund-center",
+     "mtime": "2026-10-01",
+     "size": 18208,
+     "is_index": true
+    },
+    {
+     "path": "03-client/message-center/index.html",
+     "file": "index.html",
+     "dir": "03-client/message-center",
+     "mtime": "2026-10-01",
+     "size": 9578,
+     "is_index": true
+    },
+    {
+     "path": "03-client/orders/index.html",
+     "file": "index.html",
+     "dir": "03-client/orders",
+     "mtime": "2026-08-08",
+     "size": 20660,
+     "is_index": true
+    },
+    {
+     "path": "03-client/settlement/index.html",
+     "file": "index.html",
+     "dir": "03-client/settlement",
+     "mtime": "2026-07-13",
+     "size": 17965,
+     "is_index": true
+    },
+    {
+     "path": "03-client/tasks/index.html",
+     "file": "index.html",
+     "dir": "03-client/tasks",
+     "mtime": "2026-07-11",
+     "size": 12528,
+     "is_index": true
+    },
+    {
+     "path": "04-erp/dashboard/index.html",
+     "file": "index.html",
+     "dir": "04-erp/dashboard",
+     "mtime": "2026-10-01",
+     "size": 15176,
+     "is_index": true
+    },
+    {
+     "path": "05-org-financial/buyer/index.html",
+     "file": "index.html",
+     "dir": "05-org-financial/buyer",
+     "mtime": "2026-10-01",
+     "size": 14823,
+     "is_index": true
+    },
+    {
+     "path": "05-org-financial/capital/index.html",
+     "file": "index.html",
+     "dir": "05-org-financial/capital",
+     "mtime": "2026-10-01",
+     "size": 29402,
+     "is_index": true
+    },
+    {
+     "path": "05-org-financial/core-enterprise/index.html",
+     "file": "index.html",
+     "dir": "05-org-financial/core-enterprise",
+     "mtime": "2026-10-01",
+     "size": 17144,
+     "is_index": true
+    },
+    {
+     "path": "05-org-financial/disposal/index.html",
+     "file": "index.html",
+     "dir": "05-org-financial/disposal",
+     "mtime": "2026-10-01",
+     "size": 17005,
+     "is_index": true
+    },
+    {
+     "path": "05-org-financial/supervisor/index.html",
+     "file": "index.html",
+     "dir": "05-org-financial/supervisor",
+     "mtime": "2026-10-01",
+     "size": 17561,
+     "is_index": true
+    },
+    {
+     "path": "06-portal-ind/html/index.html",
+     "file": "index.html",
+     "dir": "06-portal-ind/html",
+     "mtime": "2025-11-10",
+     "size": 0,
+     "is_index": true
+    },
+    {
+     "path": "06-portal-ind/profile/index.html",
+     "file": "index.html",
+     "dir": "06-portal-ind/profile",
+     "mtime": "2026-09-14",
+     "size": 54922,
+     "is_index": true
+    },
+    {
+     "path": "00_requirement_dev/套期保值风控管理系统/prototype/index.html",
+     "file": "index.html",
+     "dir": "00_requirement_dev/套期保值风控管理系统/prototype",
+     "mtime": "2026-09-24",
+     "size": 5243,
+     "is_index": true
+    },
+    {
+     "path": "00_requirement_dev/期货套保风控管理/04-futures-hedging-cotrol-v1/index.html",
+     "file": "index.html",
+     "dir": "00_requirement_dev/期货套保风控管理/04-futures-hedging-cotrol-v1",
+     "mtime": "2026-09-15",
+     "size": 15551,
+     "is_index": true
+    },
+    {
+     "path": "08-webapp/wecom/chat/index.html",
+     "file": "index.html",
+     "dir": "08-webapp/wecom/chat",
+     "mtime": "2026-08-20",
+     "size": 37565,
+     "is_index": true
+    }
+   ],
+   "html_total": 1243,
+   "subs": [
+    {
+     "name": "00_business_skills",
+     "kinds": [],
+     "count": 2
+    },
+    {
+     "name": "00_html_standards",
+     "kinds": [],
+     "count": 3
+    },
+    {
+     "name": "00_requirement_dev",
+     "kinds": [],
+     "count": 7
+    },
+    {
+     "name": "00_tech_leader",
+     "kinds": [
+      "html"
+     ],
+     "count": 10
+    },
+    {
+     "name": "01-design",
+     "kinds": [
+      "html"
+     ],
+     "count": 18
+    },
+    {
+     "name": "01-project-lifecycle",
+     "kinds": [
+      "html"
+     ],
+     "count": 9
+    },
+    {
+     "name": "01-tech-foundation",
+     "kinds": [
+      "html"
+     ],
+     "count": 23
+    },
+    {
+     "name": "02-manage",
+     "kinds": [
+      "html"
+     ],
+     "count": 16
+    },
+    {
+     "name": "02-manage-god",
+     "kinds": [
+      "html"
+     ],
+     "count": 21
+    },
+    {
+     "name": "02-org",
+     "kinds": [
+      "html"
+     ],
+     "count": 5
+    },
+    {
+     "name": "02-org-kiosk",
+     "kinds": [
+      "html"
+     ],
+     "count": 4
+    },
+    {
+     "name": "02-sass",
+     "kinds": [
+      "html"
+     ],
+     "count": 7
+    },
+    {
+     "name": "03-client",
+     "kinds": [
+      "html"
+     ],
+     "count": 15
+    },
+    {
+     "name": "03-mobile",
+     "kinds": [
+      "html"
+     ],
+     "count": 2
+    },
+    {
+     "name": "04-ctrm",
+     "kinds": [
+      "html"
+     ],
+     "count": 8
+    },
+    {
+     "name": "04-driver",
+     "kinds": [
+      "html"
+     ],
+     "count": 1
+    },
+    {
+     "name": "04-erp",
+     "kinds": [
+      "html"
+     ],
+     "count": 10
+    },
+    {
+     "name": "04-futures-hedging-cotrol",
+     "kinds": [
+      "html"
+     ],
+     "count": 12
+    },
+    {
+     "name": "05-org-financial",
+     "kinds": [
+      "html"
+     ],
+     "count": 11
+    },
+    {
+     "name": "05-org-logistics",
+     "kinds": [
+      "html"
+     ],
+     "count": 10
+    },
+    {
+     "name": "05-org-warehouse",
+     "kinds": [
+      "html"
+     ],
+     "count": 4
+    },
+    {
+     "name": "05-screen",
+     "kinds": [
+      "html"
+     ],
+     "count": 6
+    },
+    {
+     "name": "06-portal",
+     "kinds": [
+      "html"
+     ],
+     "count": 11
+    },
+    {
+     "name": "06-portal-ind",
+     "kinds": [
+      "html",
+      "doc"
+     ],
+     "count": 22
+    },
+    {
+     "name": "06-portal-power",
+     "kinds": [
+      "html"
+     ],
+     "count": 9
+    },
+    {
+     "name": "07-b2c",
+     "kinds": [
+      "html"
+     ],
+     "count": 18
+    },
+    {
+     "name": "08-webapp",
+     "kinds": [
+      "html"
+     ],
+     "count": 3
+    }
+   ],
+   "git": {
+    "dirty": 113,
+    "branch": "main",
+    "last_commit": "2026-09-29 21:47",
+    "commits": 54,
+    "commit_msg": "修复CTRM业务中心默认页死链(trade-list→trade-own)"
+   },
+   "bats": [
+    {
+     "file": "start.bat",
+     "ports": [
+      "3003"
+     ]
+    }
+   ],
+   "mtime": "2026-09-30 19:00",
+   "desc": "大宗商品合同履约与供应链产业电商的**纯静态可视化原型**。无构建工具、无后端、无测试框架；所有页面为自包含 HTML，依赖公共 CDN。"
+  },
+  {
+   "key": "axure",
+   "label": "Axure原型",
+   "root": "D:/ai_work/p001_all_html_axure",
+   "domain": "工作",
+   "exists": true,
+   "entries": [
+    {
+     "path": "p001_1033_design_claude/index.html",
+     "file": "index.html",
+     "dir": "p001_1033_design_claude",
+     "mtime": "2026-07-09",
+     "size": 10084,
+     "is_index": true
+    },
+    {
+     "path": "p001_1033_mes/index.html",
+     "file": "index.html",
+     "dir": "p001_1033_mes",
+     "mtime": "2026-07-15",
+     "size": 15614,
+     "is_index": true
+    },
+    {
+     "path": "p001_farm_purchase/index.html",
+     "file": "index.html",
+     "dir": "p001_farm_purchase",
+     "mtime": "2026-08-27",
+     "size": 10816,
+     "is_index": true
+    },
+    {
+     "path": "p001_farm_purchase/architecture.html",
+     "file": "architecture.html",
+     "dir": "p001_farm_purchase",
+     "mtime": "2026-08-26",
+     "size": 4809,
+     "is_index": false
+    },
+    {
+     "path": "p001_farm_purchase/broker-flow.html",
+     "file": "broker-flow.html",
+     "dir": "p001_farm_purchase",
+     "mtime": "2026-08-26",
+     "size": 4228,
+     "is_index": false
+    },
+    {
+     "path": "p001_farm_purchase/business-flow.html",
+     "file": "business-flow.html",
+     "dir": "p001_farm_purchase",
+     "mtime": "2026-08-25",
+     "size": 12965,
+     "is_index": false
+    },
+    {
+     "path": "p001_farm_purchase/development-estimate.html",
+     "file": "development-estimate.html",
+     "dir": "p001_farm_purchase",
+     "mtime": "2026-08-26",
+     "size": 23698,
+     "is_index": false
+    },
+    {
+     "path": "p001_farm_purchase/merchant-flow.html",
+     "file": "merchant-flow.html",
+     "dir": "p001_farm_purchase",
+     "mtime": "2026-08-26",
+     "size": 4230,
+     "is_index": false
+    },
+    {
+     "path": "p001_farm_purchase/overview.html",
+     "file": "overview.html",
+     "dir": "p001_farm_purchase",
+     "mtime": "2026-08-25",
+     "size": 15453,
+     "is_index": false
+    },
+    {
+     "path": "p001_multi_market_agreement/index.html",
+     "file": "index.html",
+     "dir": "p001_multi_market_agreement",
+     "mtime": "2026-09-11",
+     "size": 12908,
+     "is_index": true
+    },
+    {
+     "path": "p001_vr_shop/index.html",
+     "file": "index.html",
+     "dir": "p001_vr_shop",
+     "mtime": "2025-06-26",
+     "size": 359,
+     "is_index": true
+    },
+    {
+     "path": "p001_1033_mes/01-design/index.html",
+     "file": "index.html",
+     "dir": "p001_1033_mes/01-design",
+     "mtime": "2026-07-15",
+     "size": 8343,
+     "is_index": true
+    },
+    {
+     "path": "p001_1033_mes/02-manage/index.html",
+     "file": "index.html",
+     "dir": "p001_1033_mes/02-manage",
+     "mtime": "2026-07-15",
+     "size": 8016,
+     "is_index": true
+    },
+    {
+     "path": "p001_1033_mes/03-client/index.html",
+     "file": "index.html",
+     "dir": "p001_1033_mes/03-client",
+     "mtime": "2026-07-14",
+     "size": 7021,
+     "is_index": true
+    },
+    {
+     "path": "p001_reverse_invoicing/小程序原型/index.html",
+     "file": "index.html",
+     "dir": "p001_reverse_invoicing/小程序原型",
+     "mtime": "2026-09-17",
+     "size": 7695,
+     "is_index": true
+    },
+    {
+     "path": "p001_1033_mes/03-client/dashboard/index.html",
+     "file": "index.html",
+     "dir": "p001_1033_mes/03-client/dashboard",
+     "mtime": "2026-07-15",
+     "size": 52682,
+     "is_index": true
+    }
+   ],
+   "html_total": 96,
+   "subs": [
+    {
+     "name": "p001_1033_design_claude",
+     "kinds": [
+      "html",
+      "doc"
+     ],
+     "count": 9
+    },
+    {
+     "name": "p001_1033_mes",
+     "kinds": [
+      "html",
+      "bat"
+     ],
+     "count": 6
+    },
+    {
+     "name": "p001_farm_purchase",
+     "kinds": [
+      "html"
+     ],
+     "count": 14
+    },
+    {
+     "name": "p001_multi_market_agreement",
+     "kinds": [
+      "html"
+     ],
+     "count": 6
+    },
+    {
+     "name": "p001_reverse_invoicing",
+     "kinds": [],
+     "count": 5
+    },
+    {
+     "name": "p001_vr_shop",
+     "kinds": [
+      "html",
+      "doc",
+      "node"
+     ],
+     "count": 11
+    }
+   ],
+   "git": {
+    "dirty": 2,
+    "branch": "master",
+    "last_commit": "2026-09-11 09:52",
+    "commits": 1,
+    "commit_msg": "first message"
+   },
+   "bats": [],
+   "mtime": "2026-09-16 17:43",
+   "desc": ""
+  }
+ ],
+ "discovered": [
+  {
+   "name": "personal-tools-micro",
+   "root": "D:/ai_person/personal-tools-micro",
+   "git": true,
+   "readme": true,
+   "html": 5,
+   "desc": "个人小工具集，目前包含两个独立的 Python 工具。"
+  },
+  {
+   "name": "p000_llm_pm_agent",
+   "root": "D:/ai_work/p000_llm_pm_agent",
+   "git": true,
+   "readme": true,
+   "html": 92,
+   "desc": "一款基于 **Playwright + 小米MiMo大模型** 的智能网站审计工具，从高级产品经理视角全方位诊断网站体验。"
+  },
+  {
+   "name": "p000_llm_tester_agent",
+   "root": "D:/ai_work/p000_llm_tester_agent",
+   "git": true,
+   "readme": false,
+   "html": 0,
+   "desc": ""
+  },
+  {
+   "name": "p002_portal",
+   "root": "D:/ai_work/p002_portal",
+   "git": true,
+   "readme": true,
+   "html": 26,
+   "desc": "仓库根 `pom.xml` 为 **聚合 POM**（`packaging=pom`，`com.czzdit:p002_portal:1.0.0`），仅供 IDE 的 Java Language Server 将工作区整"
+  },
+  {
+   "name": "p003_littleman",
+   "root": "D:/ai_work/p003_littleman",
+   "git": true,
+   "readme": false,
+   "html": 2,
+   "desc": ""
+  },
+  {
+   "name": "p003_oa_php",
+   "root": "D:/ai_work/p003_oa_php",
+   "git": true,
+   "readme": false,
+   "html": 403,
+   "desc": ""
+  }
+ ]
+}

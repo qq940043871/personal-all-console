@@ -8,9 +8,16 @@ ROOTS = [
     ("money",   "投资交易",   "D:/ai_person/personal-money-note",       "生活"),
     ("tech",    "技术知识",   "D:/ai_person/personal-tech-knowledge",   "生活"),
     ("family",  "家庭亲子",   "D:/ai_person/personal-my-family",        "生活"),
-    ("b2b",     "B2B供应链",  "D:/ai_work/p001_b2b_supply_chain",       "工作"),
+    ("readbook","读书拆书",   "D:/ai_person/personal-read-book",        "生活"),
+    ("aieng",   "AI 工程",    "D:/ai_person/personal-ai-engineering",   "生活"),
+    ("b2b",     "B2B 供应链", "D:/ai_work/p001_b2b_supply_chain",       "工作"),
     ("axure",   "Axure原型",  "D:/ai_work/p001_all_html_axure",         "工作"),
 ]
+
+# 自动发现：这些根目录下存在但未登记的仓库（有 .git 或 README 即视为仓库）
+DISCOVER_DIRS = ["D:/ai_person", "D:/ai_work"]
+DISCOVER_PREFIX = ("personal-", "p00")
+DISCOVER_SKIP = {"personal-all-console"}
 
 SKIP_DIRS = {".git", "node_modules", ".workbuddy", ".zcode", ".claude", "__pycache__",
              ".venv", "venv", "dist", "build", ".idea", ".vscode", "models", "storage",
@@ -129,8 +136,49 @@ def sub_projects(root, depth=1):
     return res
 
 
+def discover(known_roots):
+    """发现未登记的仓库：有 .git 或 README.md 的一级子目录"""
+    out = []
+    for base in DISCOVER_DIRS:
+        if not os.path.isdir(base):
+            continue
+        for name in sorted(os.listdir(base)):
+            if name.startswith(".") or name.startswith("_") or name in DISCOVER_SKIP:
+                continue
+            if not name.startswith(DISCOVER_PREFIX):
+                continue
+            p = os.path.join(base, name)
+            if not os.path.isdir(p):
+                continue
+            norm = os.path.normcase(os.path.join(base, name).replace("\\", "/"))
+            if norm in known_roots:
+                continue
+            try:
+                inner = os.listdir(p)
+            except Exception:
+                continue
+            low = [x.lower() for x in inner]
+            is_git = ".git" in low
+            has_readme = any(x.startswith("readme") for x in low)
+            if not (is_git or has_readme):
+                continue
+            desc = ""
+            for rm in ("README.md", "readme.md", "README.MD"):
+                if rm in inner:
+                    for line in read_text(os.path.join(p, rm), 900).splitlines():
+                        line = line.strip()
+                        if line and not line.startswith(("#", ">", "|", "-", "`", "=")):
+                            desc = line[:110]
+                            break
+                    break
+            out.append(dict(name=name, root=p.replace("\\", "/"), git=is_git,
+                            readme=has_readme, html=count_html(p), desc=desc))
+    return out
+
+
 def main():
     data = []
+    known_roots = set()
     for key, label, root, domain in ROOTS:
         root = root.replace("\\", "/")
         item = {
@@ -147,7 +195,7 @@ def main():
         bats = []
         for f in os.listdir(root):
             if f.lower().endswith(".bat"):
-                txt = read_text(os.path.join(root, f), 1500)
+                txt = read_text(os.path.join(root, f), 8000)
                 ports = sorted(set(PORT_RE.findall(txt)))
                 ports = [p for p in ports if 3000 <= int(p) <= 9999]
                 bats.append({"file": f, "ports": ports})
@@ -166,8 +214,15 @@ def main():
                 break
         item["desc"] = desc
         data.append(item)
+        known_roots.add(os.path.normcase(root.replace("\\", "/")))
+    disc = discover(known_roots)
+    payload = {
+        "generated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "projects": data,
+        "discovered": disc,
+    }
     with open("D:/ai_person/personal-all-console/_scan/projects.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=1)
+        json.dump(payload, f, ensure_ascii=False, indent=1)
     # 控制台摘要
     for it in data:
         print("=" * 60)
@@ -181,6 +236,14 @@ def main():
         print("  entries=")
         for e in it.get("entries", [])[:25]:
             print("     ", e["path"], e["mtime"], e["size"])
+    if disc:
+        print("=" * 60)
+        print("[未登记仓库] %d 个（存在 .git/README 但不在策展表里）:" % len(disc))
+        for d in disc:
+            print("   -", d["name"], "| git" if d["git"] else "| 无 git",
+                  "| HTML", d["html"], "| ", d["root"])
+    else:
+        print("[未登记仓库] 无")
 
 
 if __name__ == "__main__":

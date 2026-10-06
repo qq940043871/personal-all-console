@@ -7,13 +7,16 @@ ROOT = pathlib.Path("D:/ai_person/personal-all-console")
 HTML = ROOT / "index.html"
 
 src = HTML.read_text(encoding="utf-8")
-m = re.search(r"const DATA = (\[.*?\]);\n", src, re.S)
+m = re.search(r"const _RAW = (.*?);\nconst DATA", src, re.S)
 print("数据注入:", "OK" if m else "失败")
 if not m:
     sys.exit(1)
 import json
-data = json.loads(m.group(1))
-print("项目数:", len(data), "| 入口合计:", sum(len(d["entries"]) for d in data))
+_raw = json.loads(m.group(1))
+data = _raw["projects"]
+disc = _raw.get("discovered", [])
+print("项目数:", len(data), "| 入口合计:", sum(len(d["entries"]) for d in data),
+      "| 未登记仓库:", len(disc))
 
 errs, warns = [], []
 with sync_playwright() as pw:
